@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body class="bg-[#ececf8] flex justify-center items-start min-h-screen relative text-[#343c56] mt-10">
+    <card class="bg-[#f7f7fc] w-full md:w-[344px] shadow-[0px_0px_34px_5px_#CECEEB] rounded-lg px-2 py-2 overflow-hidden">
+        <nav class="flex items-center justify-center w-full gap-3 text-base font-semibold leading-4">
+            <button id="details" class="active w-1/3 text-center hover:shadow-[0px_5px_9px_1px_rgba(206,206,235,0.5)] hover:bg-white self-stretch p-2 rounded-lg transition-all duration-150 ease-in">Details</button>
+            <button id="tutorials" class="w-1/3 text-center hover:shadow-[0px_5px_9px_1px_rgba(206,206,235,0.5)] hover:bg-white self-stretch p-2 rounded-lg transition-all duration-150 ease-in">Tutorials</button>
+            <button id="snippets" class="w-1/3 text-center hover:shadow-[0px_5px_9px_1px_rgba(206,206,235,0.5)] hover:bg-white self-stretch p-2 rounded-lg transition-all duration-150 ease-in">Code snippets</button>
+        </nav>
+        <ul class="p-6 mt-2 text-[#8a87a7]">
+            <li id="details_info">
+                <h2 class="font-bold text-lg text-[#343c56]">Color Palette</h2>
+                <p class="block mb-4 text-sm font-semibold">Click on the color to copy code.</p>
+                <ul class="flex flex-row flex-wrap items-center justify-start gap-4 mb-10">
+                    <li class="w-[47%] border border-[#ebebf2] bg-white rounded-full flex items-center justify-start font-semibold">
+                        <span class="inline-block w-[24px] h-[24px] rounded-full bg-[#bac4e0] m-[6px]"></span>
+                        <span>#BAC4E0</span>
+                    </li>
+                    <li class="w-[47%] border border-[#ebebf2] bg-white rounded-full flex items-center justify-start font-semibold">
+                        <span class="inline-block w-[24px] h-[24px] rounded-full bg-[#e9effd] m-[6px]"></span>
+                        <span class="uppercase">#e9effd</span>
+                    </li>
+                    <li class="w-[47%] border border-[#ebebf2] bg-white rounded-full flex items-center justify-start font-semibold">
+                        <span class="inline-block w-[24px] h-[24px] rounded-full bg-[#f2f3f6] m-[6px]"></span>
+                        <span>#f2f3f6</span>
+                    </li>
+                    <li class="w-[47%] border border-[#ebebf2] bg-white rounded-full flex items-center justify-start font-semibold">
+                        <span class="inline-block w-[24px] h-[24px] rounded-full bg-[#8f95a7] m-[6px]"></span>
+                        <span>#8f95a7</span>
+                    </li>
+                    <li class="w-[47%] border border-[#ebebf2] bg-white rounded-full flex items-center justify-start font-semibold">
+                        <span class="inline-block w-[24px] h-[24px] rounded-full bg-[#5282f6] m-[6px]"></span>
+                        <span>#5282f6</span>
+                    </li>
+                    <li class="w-[47%] border border-[#ebebf2] bg-white rounded-full flex items-center justify-start font-semibold">
+                        <span class="inline-block w-[24px] h-[24px] rounded-full bg-[#222e4e] m-[6px]"></span>
+                        <span>#222e4e</span>
+                    </li>
+                </ul>
+                <h2 class="font-bold text-lg text-[#343c56] mb-4">Fonts</h2>
+                <p class="mb-1 text-lg">Muli Regular</p>
+                <p class="mb-2 text-xl font-semibold">Muli Bold</p>
+
+            </li>
+            <li id="tutorials_info" class="hidden">
+                <h2 class="font-bold text-lg text-[#343c56]">Tutorials</h2>
+                <p class="block mb-4 text-sm font-semibold">Learn how to build this component.</p>
+                <span class="block font-semibold">HTML/CSS</span>
+                <ul class="flex flex-col items-start justify-start gap-4 mt-2 mb-6">
+                    <li class="bg-white gap-2 flex-col p-4 rounded-md shadow-[0px_5px_9px_1px_rgba(206,206,235,0.2)] relative border border-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-6 top-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#202842" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 6l6 6l-6 6" />
+                        </svg>
+
+                        <h3 class="font-semibold">Andrew Gabriel</h3>
+                        <small class="font-semibold text-[#dfdee7] mt-3 block">https://www.youtube.com/watch?v=dji23dj23d923</small>
+                    </li>
+                    <li class="bg-white gap-2 flex-col p-4 rounded-md shadow-[0px_5px_9px_1px_rgba(206,206,235,0.2)] relative border border-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-6 top-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#202842" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 6l6 6l-6 6" />
+                        </svg>
+
+                        <h3 class="font-semibold">Andrew Gabriel</h3>
+                        <small class="font-semibold text-[#dfdee7] mt-3 block">https://www.youtube.com/watch?v=dji23dj23d923</small>
+                    </li>
+                </ul>
+
+                <span class="block font-semibold">REACT</span>
+                <ul class="flex flex-col items-start justify-start gap-4 mt-2">
+                    <li class="bg-white gap-2 flex-col p-4 rounded-md shadow-[0px_5px_9px_1px_rgba(206,206,235,0.2)] relative border border-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-6 top-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#202842" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 6l6 6l-6 6" />
+                        </svg>
+    
+                        <h3 class="font-semibold">Andrew Gabriel</h3>
+                        <small class="font-semibold text-[#dfdee7] mt-3 block">https://www.youtube.com/watch?v=dji23dj23d923</small>
+                    </li>
+                </ul>
+                <p class="text-center text-[#b5b4c9] mt-10 text-sm font-semibold">Did you make a tutorial with this component? <a href="#" class="underline text-[#f775c1]">Send your link</a> and we will post it here.</p>
+            </li>
+            <li id="snippets_info" class="hidden">
+                <h2 class="font-bold text-lg text-[#343c56]">Code snippets</h2>
+                <p class="block mb-4 text-sm font-semibold">Inspect the solutions others implemented.</p>
+                <ul class="flex flex-col items-start justify-start gap-4 mt-2 mb-6">
+                    <li class="bg-white gap-2 flex-col p-4 rounded-md shadow-[0px_5px_9px_1px_rgba(206,206,235,0.2)] relative border border-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-6 top-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#202842" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 6l6 6l-6 6" />
+                        </svg>
+
+                        <h3 class="font-semibold">Stefan Galescu</h3>
+                        <small class="font-semibold text-[#dfdee7] mt-3 block">https://www.youtube.com/watch?v=dji23dj23d923</small>
+                    </li>
+                    <li class="bg-white gap-2 flex-col p-4 rounded-md shadow-[0px_5px_9px_1px_rgba(206,206,235,0.2)] relative border border-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-6 top-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#202842" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 6l6 6l-6 6" />
+                        </svg>
+
+                        <h3 class="font-semibold">frederic</h3>
+                        <small class="font-semibold text-[#dfdee7] mt-3 block">https://www.youtube.com/watch?v=dji23dj23d923</small>
+                    </li>
+                </ul>
+
+                <p class="text-center text-[#b5b4c9] mt-10 text-sm font-semibold">Did you make a tutorial with this component? <a href="#" class="underline text-[#f775c1]">Send your link</a> and we will post it here.</p>
+            </li>
+        </ul>
+        <style>
+            .details-hidden,
+            .tutorials-hidden,
+            .snippets-hidden {
+                display: none;
+                opacity: 0;
+                height: 0;
+                overflow: hidden;
+                transition: opacity 0.3s ease, height 0.3s ease;
+            }
+
+            .details-visible,
+            .tutorials-visible,
+            .snippets-visible {
+                opacity: 1;
+                height: auto;
+                transition: opacity 0.3s ease, height 0.3s ease;
+                display: block;
+            }
+
+            .active {
+                box-shadow: 0px 5px 9px 1px rgba(206,206,235,0.5);
+                background-color: white;
+            }
+        </style>
+        <script>
+            const detailsBtn = document.getElementById('details');
+            const tutorialsBtn = document.getElementById('tutorials');
+            const snippetsBtn = document.getElementById('snippets');
+
+            const detailsInfo = document.getElementById('details_info');
+            const tutorialsInfo = document.getElementById('tutorials_info');
+            const snippetsInfo = document.getElementById('snippets_info');
+
+            detailsBtn.addEventListener('click', () => toggleAccordion(detailsInfo));
+            tutorialsBtn.addEventListener('click', () => toggleAccordion(tutorialsInfo));
+            snippetsBtn.addEventListener('click', () => toggleAccordion(snippetsInfo));
+
+            function toggleAccordion(infoElement) {
+                hideElement(detailsInfo);
+                hideElement(tutorialsInfo);
+                hideElement(snippetsInfo);
+
+                showElement(infoElement);
+            }
+
+            function hideElement(element) {
+                element.classList.remove('details-visible', 'tutorials-visible', 'snippets-visible');
+                element.classList.add('details-hidden', 'tutorials-hidden', 'snippets-hidden');
+            }
+
+            function showElement(element) {
+                element.classList.remove('details-hidden', 'tutorials-hidden', 'snippets-hidden');
+                element.classList.add('details-visible', 'tutorials-visible', 'snippets-visible');
+            }
+
+        </script>
+    </card>
+</body>
+</html>

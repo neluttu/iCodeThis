@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .ribbon::before,
+    .ribbon::after {
+        content: "";
+        position: absolute;
+    }
+
+    .ribbon::before {
+        height: 0;
+        width: 0;
+        bottom: -10px;
+        left: 0;
+        border-top: 10px solid #9898ff;
+        border-left: 10px solid transparent;
+    }
+
+    .ribbon::after {
+        height: 0;
+        width: 0;
+        right: 0;
+        bottom: -10px;
+        border-top: 10px solid #9898ff;
+        border-right: 10px solid transparent;
+    }
+}

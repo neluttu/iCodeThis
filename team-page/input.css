@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .box {
+
+        cursor: pointer;
+    }
+    .box:hover img {
+        transition: all .3s ease;
+        transform: scale(1.04);
+    }
+
+    .box img {
+        transition: all .3s ease;
+    }
+}
+
+

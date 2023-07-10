@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Card - iCodeThis.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="styles.css" rel="stylesheet" media="all" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <svg xmlns="http://www.w3.org/2000/svg" class="elipsis" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="5" cy="12" r="1" />
+            <circle cx="12" cy="12" r="1" />
+            <circle cx="19" cy="12" r="1" />
+        </svg>
+        <div class="content">
+            <h2>Project Card challenge</h2>
+            <span class="date">Created on february 20th, 2023</span>
+            <div class="text">
+                Coding this for fun and to improve skills. Join iCodethis.com challenges to improve yours. Fully functional project card with HTML / CSS and JavaScript (jQuery included).
+            </div>
+            <span class="progress-tasks">Tasks</span> &nbsp; 
+            <div class="progress-bar">
+                <span data-progress="96"></span>  
+            </div>
+            <span class="percent"></span>
+            <script>
+                $(".progress-bar span").animate({width: $(".progress-bar span").attr("data-progress") + "%",},700);
+                $(".percent").text($(".progress-bar span").attr("data-progress") + "%");
+            </script>
+            <br>
+            <br>
+            <img src="https://pbs.twimg.com/profile_images/1440624750808625171/7kSNddJC_400x400.jpg" width="54px" alt="me :)">
+            <img src="https://pbs.twimg.com/profile_images/1602443868527595520/cOjnC2Zh_400x400.jpg" width="54px" alt="me :)">
+            <img src="https://pbs.twimg.com/profile_images/1590968738358079488/IY9Gx6Ok_400x400.jpg" width="54px" alt="me :)">
+            <img src="https://pbs.twimg.com/profile_images/1217246115910901761/Tuy4UseB_400x400.jpg" width="54px" alt="me :)">
+        </div>
+    </div>
+</body>
+</html>

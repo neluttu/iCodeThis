@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.x {
+    @apply self-center items-center w-full h-[150px] bg-cover bg-no-repeat bg-center transition-all duration-500 rounded-lg relative hover:h-full hover:cursor-pointer;
+}
+
+.x:hover {
+    @apply h-full cursor-pointer;
+  }
+
+.x:hover p {
+    @apply block;
+  }
+
+.row {
+    @apply items-stretch w-[200px] flex h-[400px] rounded-lg bg-cover bg-center;
+}

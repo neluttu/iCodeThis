@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .button {
+        @apply py-3 px-4 md:py-6 md:px-12 bg-[#1f1e26] text-base md:text-lg text-white rounded-full inline-block hover:bg-[#333240] transition-all duration-150 ease-in;
+    }
+
+    .button-footer {
+        @apply py-3 px-4 md:py-6 md:px-12 bg-[#fff] text-base md:text-lg text-[#1f1e26] rounded-full inline-block hover:bg-[#7166FF] hover:text-white transition-all duration-150 ease-in;
+    }
+
+    .arrow {
+        @apply rounded-full bg-[#483ED0] p-2 md:p-6 group-hover:bg-[#7166FF] transition-all duration-150 ease-in;
+    }
+
+    .work-grid {
+        @apply flex flex-col items-start justify-start gap-32 mt-32 md:flex-row;
+    }
+
+    .work-grid-li {
+        @apply flex flex-col items-start justify-start basis-1/2;
+    }
+
+    .work-grid-div {
+        @apply flex flex-col items-start justify-center gap-10 mb-32;
+    }
+
+    .work-grid-img {
+        @apply w-full;
+    }
+
+    .work-col {
+        @apply flex flex-col items-start justify-start gap-32 mt-32;
+    }
+
+    .work-col-li {
+        @apply flex flex-col items-center justify-start w-full gap-10;
+    }
+
+    .work-col-div {
+        @apply flex flex-col items-start justify-center gap-10 mb-32 md:gap-20 md:items-center md:flex-row;
+    }
+
+    .work-col-img {
+        @apply w-full md:w-1/2 md:shrink-0 overflow-hidden md:max-h-[420px];
+    }
+
+
+
+    .work-display {
+        @apply p-8 bg-white text-lg text-white rounded-full inline-block border border-[#CACACC] hover:bg-[#1F1E26] hover:border-[#1F1E26] transition-all duration-150 ease-in;
+    }
+
+    .work-display svg rect {
+        fill: #1F1E26;
+    }
+
+    .work-display:hover svg rect {
+        fill: white;
+    }
+
+    .work-display-selected {
+        @apply p-8 bg-[#1f1e26] border border-[#1f1e26] text-lg text-white rounded-full inline-block transition-all duration-150 ease-in;
+    }
+
+    .work-display-selected svg rect {
+        fill: white;
+    }
+
+
+    .filter-selected {
+        @apply px-5 py-2 lg:px-10 lg:py-6 cursor-pointer rounded-full bg-[#1F1E26] text-white border-[#1F1E26] transition-all duration-150 ease-in;
+    }
+
+    .filter {
+        @apply px-5 py-2 lg:px-10 lg:py-6 cursor-pointer rounded-full hover:bg-[#1F1E26] hover:text-white hover:border-[#1F1E26] border border-[#CACACC] transition-all duration-150 ease-in
+        
+    }
+}
+
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+
+      .mobileMenu.open {
+        max-height: 500px; /* Adjust the height as needed */
+        transition: max-height 1s ease-in;
+    }
+
+  }

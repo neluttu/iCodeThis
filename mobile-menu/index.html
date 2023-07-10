@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body class="flex justify-center items-center min-h-screen relative text-[#121c51] mx-9">
+    <div class="bg-white mb-10 mt-10 relative shadow-lg rounded-3xl w-[456px] min-h-[500px] overflow-hidden flex justify-start items-start flex-col">
+        <div class="absolute bg-gradient-to-r from-[#708cd6] to-[#3b62cf] w-[130%] -left-5 rounded-[75px] h-[250px] -rotate-12 -top-20 z-[1] shadow-lg"></div>
+
+        <ul class="z-[2] flex w-full px-6 py-10 relative justify-center items-center gap-4">
+            <li class="w-1/3">
+                <img src="https://wwsthemes.com/themes/medwise/v1.4/images/doctor-single.jpg" class="rounded-full w-[90px] shadow-[0px_3px_13px_1px_rgba(61,91,174,0.34),0px_0px_0px_12px_#7C96D9] box-content ml-4">
+            </li>
+            <li class="grow shrink text-white text-2xl">
+                Dr. Jessica James<br>
+                <span class="text-[#ced8f2] text-xl">Dermathologist</span>
+            </li>
+        </ul>
+        <button class="z-10 relative text-center self-center mt-24 bg-[#628cff] px-8 py-4 text-white rounded-lg text-xl shadow-[0px_3px_13px_1px_rgba(61,91,174,0.34)] hover:bg-[#3b62cf] transition-all duration-150 ease-in">
+            <svg xmlns="http://www.w3.org/2000/svg" class="inline -mt-1" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 5l0 14" />
+                <path d="M5 12l14 0" />
+              </svg>
+            Add Branch
+        </button>
+        <ul class="list-none flex flex-col w-full mt-10">
+            <li class="menuItem border-white border-l-[6px] hover:border-l-[6px] hover:border-[#2574f6] pl-10 h-[88px] self-baseline flex justify-center items-center text-2xl transition-all duration-150 ease-in hover:text-[#2574f6] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-8" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b8bbbe" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4h6v8h-6z" />
+                    <path d="M4 16h6v4h-6z" />
+                    <path d="M14 12h6v8h-6z" />
+                    <path d="M14 4h6v4h-6z" />
+                </svg>
+                Dashboard
+            </li>
+            <li class="menuItem border-white border-l-[6px] hover:border-l-[6px] hover:border-[#2574f6] pl-10 h-[88px] self-baseline flex justify-center items-center text-2xl transition-all duration-150 ease-in hover:text-[#2574f6] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-8" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b8bbbe" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M19 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M19 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                  </svg>
+                Post sessions
+            </li>
+            <li class="menuItem border-white border-l-[6px] hover:border-l-[6px] hover:border-[#2574f6] pl-10 h-[88px] self-baseline flex justify-center items-center text-2xl transition-all duration-150 ease-in hover:text-[#2574f6] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-8" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b8bbbe" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+                    <path d="M10 9l5 3l-5 3z" />
+                  </svg>
+                Live sessions
+            </li>
+            <li class="menuItem border-white border-l-[6px] hover:border-l-[6px] hover:border-[#2574f6] pl-10 h-[88px] self-baseline flex justify-center items-center text-2xl transition-all duration-150 ease-in hover:text-[#2574f6] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-8" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b8bbbe" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8 9h8" />
+                    <path d="M8 13h6" />
+                    <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                  </svg>
+                Messages
+            </li>
+            <li class="menuItem border-white border-l-[6px] hover:border-l-[6px] hover:border-[#2574f6] pl-10 h-[88px] self-baseline flex justify-center items-center text-2xl transition-all duration-150 ease-in hover:text-[#2574f6] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-8" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b8bbbe" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14.017 18l-2.017 2l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.153 5.784" />
+                    <path d="M15.99 20l4.197 -4.223a2.81 2.81 0 0 0 0 -3.948a2.747 2.747 0 0 0 -3.91 -.007l-.28 .282l-.279 -.283a2.747 2.747 0 0 0 -3.91 -.007a2.81 2.81 0 0 0 -.007 3.948l4.182 4.238z" />
+                  </svg>
+                Locum library
+            </li>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute hover:stroke-[#3b62cf] hover:drop-shadow-md transition-all duration-150 ease-in right-8 bottom-8 cursor-pointer" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b8bbbe" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+        </svg>
+        <br><br>
+    </div>
+</body>
+</html>

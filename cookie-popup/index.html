@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Cookie Consent</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" media="all">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-[#f8f8f8] flex justify-center items-center min-h-screen flex-col">
+    <modal class="w-[90%] relative text-[#5f5f5f] sm:w-[480px] bg-white m-2 sm:px-24 sm:py-12 px-6 py-4 flex justify-center items-center flex-col shadow-lg rounded-sm">
+        <svg xmlns="http://www.w3.org/2000/svg"
+            class="close absolute right-0 top-0 cursor-pointer mr-4 mt-4" width="40"
+            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9b9aa1" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+        <img src="https://media.istockphoto.com/id/1144253396/vector/cookie-flat-design.jpg?s=612x612&w=0&k=20&c=rsWQZzA3K3iPnKBn7mLXRZY1SzDKzeR8EU4ebN-t06Q=" width="120">
+        <p class="text-center text-lg font-semibold leading-6">Our website uses cookies to ensure you get the best experience while you're here.</p>
+        <button class="close mt-10 hover:bg-[#b4e257] transition-all ease-in duration-200 shadow-lg mb-10 bg-[#99c444] px-12 py-5 text-white font-semibold rounded-md w-full">Okay</button>
+        <a href="#" class="font-semibold hover:text-[#99c444] transition-all duration-200 ease-in">LEARN MORE</a>
+    </modal>
+    <script>
+        $(document).ready(function() {
+            $('.close').click(function() {
+                $('modal').slideUp(500, function() {
+                $(this).fadeOut(500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

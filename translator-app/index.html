@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeThis.com daily challenge</title>
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#14172d] flex items-center justify-center min-h-screen">
+    <div class="w-full md:w-[600px] bg-[#191c36] shadow-[0px_9px_16px_5px_rgba(18,19,39,0.69)] text-[#9da0b8] overflow-hidden relative flex flex-col">
+        <div class="w-full bg-[#121327] text-[#51546e] text-right flex items-center justify-end p-4 gap-2">
+            <span class="rounded-full w-[12px] bg-[#51546e] aspect-square block hover:bg-[#0489ff] cursor-pointer transition-all duration-150 ease-in"></span>
+            <span class="rounded-full w-[12px] bg-[#51546e] aspect-square block hover:bg-[#fcec0d] cursor-pointer transition-all duration-150 ease-in"></span>
+            <span class="rounded-full w-[12px] bg-[#51546e] aspect-square block hover:bg-[#e7291c] cursor-pointer transition-all duration-150 ease-in"></span>
+        </div>
+        <svg id="back" xmlns="http://www.w3.org/2000/svg" class="hidden m-3 cursor-pointer hover:stroke-[#0489ff] transition-all duration-150 ease-in" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke="#575a74" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l14 0" />
+            <path d="M5 12l6 6" />
+            <path d="M5 12l6 -6" />
+        </svg>
+        <ul class="flex items-center justify-center w-3/5 m-auto carousel transition-transform duration-200 ease-in min-h-[300px]">
+            <li class="w-full flex">
+                <div class="flex items-center justify-center border-2 border-dashed border-[#121327] w-full p-2 text-sm flex-col my-6 py-10">
+                    <p class="font-semibold">Drag and Drop your <span class="font-bold">.json</span> file</p>
+                    <h2 class="my-10">OR</h2>
+                    <button onclick="nextSlide()" class="bg-[#0489ff] px-10 py-3 text-white rounded-sm hover:bg-[#319cfa] transition-all duration-150 ease-in next">
+                        Select files to Upload
+                    </button>
+                </div>
+            </li>
+            <li class="w-full hidden">
+                <div class="flex items-center justify-center w-full p-2 text-sm flex-col my-6 py-10">
+                    <p class="font-semibold">ERROR</p>
+                    <button onclick="nextSlide()" class="bg-[#0489ff] px-10 py-3 text-white rounded-sm hover:bg-[#319cfa] transition-all duration-150 ease-in next">
+                        Select files to Upload
+                    </button>
+                </div>
+            </li>
+        </ul>
+        
+                <script>
+            const slides = document.querySelectorAll(".carousel li");
+            const carousel = document.querySelector(".carousel");
+            const back = document.getElementById("back");
+
+            const firstSlide = 0;
+            const lastSlide = slides.length - 1;
+            let activeSlide = 0;
+
+            
+            const prevSlide = () => {
+                slides[activeSlide].classList.remove("flex");
+                slides[activeSlide].classList.add("hidden");
+                if (activeSlide !== firstSlide) {
+                    activeSlide = activeSlide - 1;
+                    back.classList.add('block');
+                } else {
+                    activeSlide = 0;
+                    back.classList.add('hidden');
+                }
+                slides[activeSlide].classList.add("flex");
+                slides[activeSlide].classList.remove("hidden");
+                carousel.classList.add("move-left"); 
+                setTimeout(() => {
+                    carousel.classList.remove("move-left");
+                }, 300); 
+            };
+
+            back.addEventListener("click", prevSlide);
+
+
+            const nextSlide = () => {
+                slides[activeSlide].classList.remove("flex");
+                slides[activeSlide].classList.add("hidden");
+
+                if (activeSlide !== lastSlide) {
+                    activeSlide = activeSlide + 1;
+                } else {
+                    activeSlide = lastSlide;
+                    back.classList.add('block');
+                    back.classList.remove('hidden');
+                    console.log(back)
+                }
+                slides[activeSlide].classList.add("flex");
+                slides[activeSlide].classList.remove("hidden");
+                
+                    carousel.classList.add("move-left"); 
+                    setTimeout(() => {
+                        carousel.classList.remove("move-left"); 
+                    }, 300);
+            };
+        </script>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,29 @@
+<button onclick="toggleSlide()" class="slide-button">Slide Down</button>
+
+<div id="slide-content" class="slide-content">
+    <!-- Content of the sliding div goes here -->asdasdasdasd
+    <br>    <!-- Content of the sliding div goes here -->asdasdasdasd
+    <br>    <!-- Content of the sliding div goes here -->asdasdasdasd
+    <br>    <!-- Content of the sliding div goes here -->asdasdasdasd
+    <br>
+</div>
+
+<style>
+    .slide-content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .slide-content.open {
+        max-height: 500px; /* Adjust the height as needed */
+        transition: max-height 0.3s ease-in;
+    }
+</style>
+
+<script>
+    function toggleSlide() {
+        var slideContent = document.getElementById("slide-content");
+        slideContent.classList.toggle("open");
+    }
+</script>

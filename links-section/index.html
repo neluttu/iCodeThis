@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials 2</title>
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#f8f9fd] flex items-center justify-center flex-col min-h-screen font-nunito">
+	<div class="bg-white w-full max-w-[83.625rem] m-3 px-20 py-14 rounded-lg relative shadow-[0px_18px_15px_-5px_#E6EEF4]">
+        <span class="absolute p-3 rounded-full right-6 top-6 bg-[#f9faff] hover:bg-[#ffe0e0] cursor-pointer group transition-all duration-150 ease-in">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            class="cursor-pointer group-hover:stroke-red-400"
+            width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#8b88ab" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+            </svg>
+        </span>
+        <span class="bg-[#f8f9fd] p-2 inline-block mb-16 font-semibold text-[#464f69]">
+            <button id="personalBtn" class="mr-2 px-4 py-2 transition-all duration-300 ease-in">Personal</button>
+            <button id="businessBtn" class="bg-white shadow-[0px_8px_15px_-5px_rgba(129,133,137,0.14)] px-4 py-2 transition-all duration-300 ease-in">Business</button>
+        </span>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            var personalBtn = document.getElementById("personalBtn");
+            var businessBtn = document.getElementById("businessBtn");
+
+            personalBtn.addEventListener("click", function() {
+                // Toggle background and shadow classes
+                personalBtn.classList.toggle("bg-white");
+                personalBtn.classList.add("shadow-[0px_8px_15px_-5px_rgba(129,133,137,0.14)]");
+
+                businessBtn.classList.remove("bg-white");
+                businessBtn.classList.remove("shadow-[0px_8px_15px_-5px_rgba(129,133,137,0.14)]");
+            });
+
+            businessBtn.addEventListener("click", function() {
+                // Toggle background and shadow classes
+                personalBtn.classList.remove("bg-white");
+                personalBtn.classList.remove("shadow-[0px_8px_15px_-5px_rgba(129,133,137,0.14)]");
+                businessBtn.classList.add("bg-white");
+                businessBtn.classList.add("shadow-[0px_8px_15px_-5px_rgba(129,133,137,0.14)]");
+            });
+            });
+
+        </script>
+        <ul class="flex items-start justify-start w-full flex-wrap">
+            <li class="w-full sm:w-2/4 lg:w-1/4 pr-4 leading-9 group mb-10">
+                <h2 class="font-semibold text-[#acadb6] mb-3 group-hover:text-[#4a6eef] transition-all duration-150 ease-in">FINANCING</h2>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Loans</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Overdraft facilities</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Bank guaranties</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Leasing</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Factoring</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Trade Solutions</a>
+            </li>
+            <li class="w-full sm:w-2/4 lg:w-1/4 pr-4 leading-9 group mb-10">
+                <h2 class="font-semibold text-[#acadb6] mb-3 group-hover:text-[#4a6eef] transition-all duration-150 ease-in">SAVINGS AND INVESTMENTS</h2>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Saving accounts</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Asset Management</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Commercial paper</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Equities</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Investment Products</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Cash Management</a>
+            </li>   
+            <li class="w-full sm:w-2/4 lg:w-1/4 pr-4 leading-9 group mb-10">
+                <h2 class="font-semibold text-[#acadb6] mb-3 group-hover:text-[#4a6eef] transition-all duration-150 ease-in">TRANSACTION BANKING</h2>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Corporate app</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Internet banking</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Mobile banking</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Alert services</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Accounts</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Cards</a>
+            </li>   
+            <li class="w-full sm:w-2/4 lg:w-1/4 pr-4 leading-9 group mb-10">
+                <h2 class="font-semibold text-[#acadb6] mb-3 group-hover:text-[#4a6eef] transition-all duration-150 ease-in">MARKETS</h2>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Market Reports</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Quity rates</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Commondities</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Quities</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Foreign Exchange</a>
+                <a href="#" class="block text-lg font-[500] text-[#65697c] hover:text-[#4a6eef] hover:pl-2 transition-all ease-in duration-150">Investment products</a>
+            </li>   
+        </ul>
+        <div class="bg-[#f8f9fd] w-full p-8 mt-20">
+            <h3 class="text-sm font-semibold text-[#acadb6] mb-4">CALCULATORS AND TOOLS</h3>
+            <ul class="flex items-stretch justify-start gap-6 flex-wrap">
+                <li class="bg-white w-full sm:w-[45%] lg:w-[20%] rounded-sm cursor-pointer hover:shadow-[0px_18px_15px_-5px_#E6EEF4] transition-all duration-150 ease-in group overflow-hidden">
+                    <span class="bg-[#f8f9ff] p-2 mt-4 inline-block rounded-tr-md rounded-br-md -ml-24 group-hover:-ml-0 transition-all duration-150 ease-in">
+                        <span class="pr-8 text-sm font-semibold text-[#6e97fb]">&nbsp; Launch now</span> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block group-hover:scale-125 transition-all duration-150 ease-in" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6e97fb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M6 6h8a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-8" />
+                            <path d="M8 6l0 12" />
+                            <path d="M8 12l6 0" />
+                            <path d="M9 3l0 3" />
+                            <path d="M13 3l0 3" />
+                            <path d="M9 18l0 3" />
+                            <path d="M13 18l0 3" />
+                        </svg>
+                    </span>
+                    <h4 class="ml-8 mb-6 mt-6 font-semibold">Currency converter</h4>
+                </li>
+                <li class="bg-white w-full sm:w-[45%] lg:w-[20%] rounded-sm cursor-pointer hover:shadow-[0px_18px_15px_-5px_#E6EEF4] transition-all duration-150 ease-in group overflow-hidden">
+                    <span class="bg-[#fef3ff] p-2 mt-4 inline-block rounded-tr-md rounded-br-md -ml-24 group-hover:-ml-0 transition-all duration-150 ease-in">
+                        <span class="pr-8 text-sm font-semibold text-[#ca82ef]">&nbsp; Launch now</span> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block scale-125 transition-all duration-150 ease-in" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ca82ef" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 9m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
+                            <path d="M14 14m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M17 9v-2a2 2 0 0 0 -2 -2h-10a2 2 0 0 0 -2 2v6a2 2 0 0 0 2 2h2" />
+                        </svg>
+                    </span>
+                    <h4 class="ml-8 mb-6 mt-6 font-semibold">Hourly Rate Converter</h4>
+                </li>
+                <li class="bg-white w-full sm:w-[45%] lg:w-[20%] rounded-sm cursor-pointer hover:shadow-[0px_18px_15px_-5px_#E6EEF4] transition-all duration-150 ease-in group overflow-hidden">
+                    <span class="bg-[#ffeef1] p-2 mt-4 inline-block rounded-tr-md rounded-br-md -ml-24 group-hover:-ml-0 transition-all duration-150 ease-in">
+                        <span class="pr-8 text-sm font-semibold text-[#e688a6]">&nbsp; Launch now</span> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block group-hover:scale-125 transition-all duration-150 ease-in" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ca82ef" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12.684 3.27l.084 .09l4.7 5.64h3.532a1 1 0 0 1 .991 1.131l-.02 .112l-1.984 7.918c-.258 1.578 -1.41 2.781 -2.817 2.838l-.17 .001l-10.148 -.002c-1.37 -.053 -2.484 -1.157 -2.787 -2.57l-.035 -.185l-2 -8a1 1 0 0 1 .857 -1.237l.113 -.006h3.53l4.702 -5.64a1 1 0 0 1 1.452 -.09zm-.684 8.73a3 3 0 0 0 -2.98 2.65l-.015 .174l-.005 .176l.005 .176a3 3 0 1 0 2.995 -3.176zm0 -6.438l-2.865 3.438h5.73l-2.865 -3.438z" stroke-width="0" fill="#e688a6" />
+                          </svg>
+                    </span>
+                    <h4 class="ml-8 mb-6 mt-6 font-semibold">International trade</h4>
+                </li>
+                <li class="bg-white w-full sm:w-[45%] lg:w-[20%] rounded-sm cursor-pointer hover:shadow-[0px_18px_15px_-5px_#E6EEF4] transition-all duration-150 ease-in group overflow-hidden">
+                    <span class="bg-[#f8fcef] p-2 mt-4 inline-block rounded-tr-md rounded-br-md -ml-24 group-hover:-ml-0 transition-all duration-150 ease-in">
+                        <span class="pr-8 text-sm font-semibold text-[#a4ca5b]">&nbsp; Launch now</span> <svg xmlns="http://www.w3.org/2000/svg" class="inline-block group-hover:scale-125 transition-all duration-150 ease-in" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#a4ca5b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 3m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                            <path d="M8 7m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z" />
+                            <path d="M8 14l0 .01" />
+                            <path d="M12 14l0 .01" />
+                            <path d="M16 14l0 .01" />
+                            <path d="M8 17l0 .01" />
+                            <path d="M12 17l0 .01" />
+                            <path d="M16 17l0 .01" />
+                          </svg>
+                    </span>
+                    <h4 class="ml-8 mb-6 mt-6 font-semibold">IBAN calculator</h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

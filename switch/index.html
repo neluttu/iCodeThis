@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body class="bg-white flex justify-center items-center min-h-screen relative flex-col">
+    <div id="button1" class="w-[410px] bg-[#d7d7d7] rounded-full p-4 h-auto flex justify-end items-center mb-10 transition-all duration-200 ease-in">
+        <span class="bg-white border-[28px] border-[#4f4f4f] w-[140px] aspect-square block rounded-full cursor-pointer"></span>
+    </div>
+
+    <div id="button2" class="w-[410px] bg-[#d7d7d7] rounded-full p-4 h-auto flex justify-start items-center transition-all duration-200 ease-in">
+        <span class="bg-white transition-all duration-200 ease-in border-[28px] border-[#df2a5d] w-[140px] aspect-square block rounded-full cursor-pointer"></span>
+    </div>
+    <script>
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+
+        button1.addEventListener('click', () => {
+            button1.classList.toggle('justify-end');
+            button1.classList.toggle('justify-start');
+        });
+
+        button2.addEventListener('click', () => {
+            button2.classList.toggle('justify-end');
+            button2.classList.toggle('justify-start');
+        });
+    </script>
+</body>
+</html>

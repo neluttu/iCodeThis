@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body class="bg-[#22242c] flex justify-center items-center min-h-screen flex-col p-4">
+    <div class="bg-[#1b1d25] rounded-2xl w-full md:w-[747px] min-h-[300px] relative p-6 md:p-16 flex items-center justify-start flex-col text-[#636879]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="close absolute right-0 top-0 cursor-pointer mr-4 mt-4" width="36"
+            height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#9b9aa1" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+        <h1 class="text-center font-semibold text-2xl mb-5 text-[#9298ad]">Browse by interests</h1>
+        <p class="text-center block w-[60%] font-semibold">Select some interest to help us personalize your experience on Edmondo.</p>
+        <div class="flex items-start justify-start w-full gap-5 flex-wrap mt-14">
+            <button class="button">Math</button>
+            <button class="button">Science</button>
+            <button class="button selected">English</button>
+            <button class="button">World Languages</button>
+            <button class="button selected">Health & PE</button>
+            <button class="button">Special Education</button>
+            <button class="button">Developement</button>
+            <button class="button">Technology</button>
+            <button class="button selected">Social Studies</button>
+        </div>
+        <script>
+            const buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => { button.addEventListener('click', () => { button.classList.toggle('selected'); });
+            });
+        </script>
+        <div class="flex items-center justify-center mt-16 gap-4">
+            <button class="border-[1px] border-black px-12 py-4 rounded-md font-semibold hover:bg-[#16181f]">Skip</button>
+            <button class="border-[1px] border-[#c74063] bg-[#c74063] px-12 py-4 rounded-md font-semibold text-white hover:bg-[#9f2242]">Save</button>
+        </div>
+    </div>
+</body>
+</html>

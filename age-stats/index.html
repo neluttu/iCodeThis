@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cards 3</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all"> 
+</head>
+<body class="bg-[#3f3434] flex justify-center items-center min-h-screen ml-2 mr-2 text-white">
+    <div class="w-full md:w-[595px] bg-[#493e3e] shadow-[0px_11px_15px_5px_rgba(59,45,45,0.66)] p-14 rounded-md">
+        <h1 class="text-4xl mb-10">Age</h1>
+        <ul class="flex items-start justify-around min-h-[300px] gap-8">
+            <li class="self-stretch w-1/5 flex justify-center items-center flex-col">
+                <span class="block p-2">27.5%</span>
+                <span class="block grow rounded-md bg-[#433737] w-full relative overflow-hidden">
+                    <span data-percent="27.5" class="boxy absolute bottom-0 h-[0%] bg-[#d5634e] w-full block transition-all duration-700 ease-in"></span>
+                </span>
+                <span class="block p-2 font-semibold">18-24</span>
+            </li>
+            <li class="self-stretch w-1/5 flex justify-center items-center flex-col">
+                <span class="block p-2">33.5%</span>
+                <span class="block grow rounded-md bg-[#433737] w-full relative overflow-hidden">
+                    <span data-percent="33.5" class="boxy absolute bottom-0 h-[0%] bg-[#d5634e] w-full block transition-all duration-700 ease-in"></span>
+                </span>
+                <span class="block p-2 font-semibold">25-34</span>
+            </li>
+            <li class="self-stretch w-1/5 flex justify-center items-center flex-col">
+                <span class="block p-2">15.5%</span>
+                <span class="block grow rounded-md bg-[#433737] w-full relative overflow-hidden">
+                    <span data-percent="15.5" class="boxy absolute bottom-0 h-[0%] bg-[#d5634e] w-full block transition-all duration-700 ease-in"></span>
+                </span>
+                <span class="block p-2 font-semibold">35-44</span>
+            </li>
+            <li class="self-stretch w-1/5 flex justify-center items-center flex-col">
+                <span class="block p-2">12.5%</span>
+                <span class="block grow rounded-md bg-[#433737] w-full relative overflow-hidden">
+                    <span data-percent="12.5" class="boxy absolute bottom-0 h-[0%] bg-[#d5634e] w-full block transition-all duration-700 ease-in"></span>
+                </span>
+                <span class="block p-2 font-semibold">45-54</span>
+            </li>
+            <li class="self-stretch w-1/5 flex justify-center items-center flex-col">
+                <span class="block p-2">5.5%</span>
+                <span class="boxy block grow rounded-md bg-[#433737] w-full relative overflow-hidden">
+                    <span data-percent="5.5" class="boxy absolute bottom-0 h-[0%] bg-[#d5634e] w-full block transition-all duration-700 ease-in"></span>
+                </span>
+                <span class="block p-2 font-semibold">65+</span>
+            </li>
+        </ul>
+        <p class="text-center text-[#999393] mt-8"> 100% of total sessions</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var boxySpans = document.querySelectorAll('.boxy');
+                boxySpans.forEach(function(span) {
+                    var percent = span.getAttribute('data-percent');
+                    setTimeout(function() {
+                        span.style.height = percent + '%';
+                    }, 1000); 
+            });
+        });
+    </script>
+</body>
+</html>

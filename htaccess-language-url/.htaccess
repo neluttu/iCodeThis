@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteRule ^en/([^/]*)$ /index.php?lang=en&id=$1 [L]
+
+
+#Redirect domain.com and domain.com/index.php 
+#to
+#domain.com/en/
+
+#Rewrite domain.com/index.php?lang=en&page=details&type=cool
+#to
+#domain.com/en/details/cool

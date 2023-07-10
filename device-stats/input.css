@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .gradient {
+        background-image:
+        conic-gradient(
+          #191e2c 0%,
+          #191e2c 0.5%,
+          #5d51e2 0.5%,
+          #5d51e2 35%,
+          #191e2c 35%,
+          #191e2c 35.5%,
+          #18acae 35.5%,
+          #18acae 49.5%,
+          #191e2c 49.5%,
+          #191e2c 50%,
+          #2b80ec 50%,
+          #2b80ec 100%
+        );
+    }
+}

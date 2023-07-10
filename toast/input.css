@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    banner {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      
+    .hideNow {
+        transform: translateY(-100px);
+        opacity: 0;
+        pointer-events: none;
+    }
+}

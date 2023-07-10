@@ -1,0 +1,135 @@
+body, html {
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f7fb;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width:950px; 
+    min-height:200px; 
+    margin:auto;
+}
+
+#container > div:first-of-type {
+    padding:10px;
+}
+
+h3 {
+    font-size: 26px;
+    display: inline-block;
+}
+
+.new {
+    border-radius: 6px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 14px;
+    margin-left: 10px;
+}
+
+.new:hover {
+    background-color: #296d49;
+}
+
+.resolved {
+    background-color: #296d49;
+    font-size: 16px;
+    border-radius: 6px;
+    color:white;
+    padding: 3px 12px 3px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.monitoring {
+    background-color: #d41245;
+    font-size: 16px;
+    border-radius: 6px;
+    color:white;
+    padding: 3px 12px 3px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.investigating {
+    background-color: #d41245;
+    font-size: 16px;
+    border-radius: 6px;
+    color:white;
+    padding: 3px 12px 3px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+
+button {
+    background-color: #f6f7fb;
+    border:1px solid #d6def3;
+    padding: 8px 20px;
+    color: #4d556f;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #4d556f;
+    border:1px solid #4d556f;
+    color: white;
+}
+
+.spacer {
+    width: auto; margin-left: 100px; border-left: 3px solid #91a1c7; height: 20px;
+}
+
+.box {
+    width: 100%; 
+    background-color: white; 
+    min-height: 200px; 
+    border-radius: 4px; 
+    -webkit-box-shadow: 0px 11px 15px 21px rgba(175,175,175,0.13); 
+    box-shadow: 0px 11px 15px 21px rgba(175,175,175,0.13);
+    padding: 40px;
+}
+
+.date {
+    font-size: 18px;
+    font-weight: 600;
+}
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block;
+    max-width: 74%;
+}
+
+
+.incident {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 26px;
+    padding:30px 0px;
+    max-width: 70%;
+}
+
+.more {
+    display: none;
+    margin-top:20px;
+    color: #808597;
+}

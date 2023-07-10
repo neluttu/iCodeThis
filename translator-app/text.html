@@ -1,0 +1,106 @@
+<style>
+    .container {
+        display: flex;
+        overflow: hidden; /* Added to hide overflow when transitioning */
+        position: relative; /* Added to create a stacking context */
+    }
+
+    .carousel {
+        padding: 2rem;
+        display: flex;
+        transition: transform 0.5s ease; /* Added transition property */
+    }
+
+    .carousel div {
+        display: none;
+    }
+
+    .carousel div.active {
+        display: block;
+        background-color: brown;
+        width: 768px;
+        height: 300px;
+        color: white;
+    }
+
+    /* Added CSS for slide animation */
+    .carousel.move-left {
+        transform: translateX(-100%);
+    }
+
+    .carousel.move-right {
+        transform: translateX(100%);
+    }
+</style>
+
+<div class="container">
+    <svg onclick="prevSlide()" id="back" xmlns="http://www.w3.org/2000/svg" class="m-3 cursor-pointer hover:stroke-[#0489ff] transition-all duration-150 ease-in" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke="#575a74" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M5 12l14 0" />
+        <path d="M5 12l6 6" />
+        <path d="M5 12l6 -6" />
+    </svg>
+    <div class="carousel">
+        <div class="active">
+            slide 1<br>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+        <div>
+            slide 2
+            <br>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+        <div>
+            slide 3
+            <br>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+        <div>
+            slide 4
+            <br>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+        <div>
+            slide 5
+            <br>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const slides = document.querySelectorAll(".carousel div");
+    const carousel = document.querySelector(".carousel");
+    const back = document.getElementById("back");
+    const firstSlide = 0;
+    const lastSlide = slides.length - 1;
+    let activeSlide = 0;
+
+    const prevSlide = () => {
+        slides[activeSlide].classList.remove("active");
+        if (activeSlide !== firstSlide) {
+            activeSlide = activeSlide - 1;
+        } else {
+            activeSlide = 0;
+        }
+        slides[activeSlide].classList.add("active");
+        carousel.classList.add("move-right"); // Added class for slide animation
+        setTimeout(() => {
+            carousel.classList.remove("move-right"); // Remove class after transition
+        }, 300); // Adjust the timeout duration to match the CSS transition duration
+    };
+
+    const nextSlide = () => {
+        slides[activeSlide].classList.remove("active");
+        if (activeSlide !== lastSlide) {
+            activeSlide = activeSlide + 1;
+        } else {
+            activeSlide = lastSlide;
+        }
+        slides[activeSlide].classList.add("active");
+        carousel.classList.add("move-left"); // Added class for slide animation
+        setTimeout(() => {
+            carousel.classList.remove("move-left"); // Remove class after transition
+        }, 300); // Adjust the timeout duration to match the CSS transition duration
+    };
+</script>

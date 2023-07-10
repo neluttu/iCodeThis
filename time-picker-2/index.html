@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeThis.com daily challenge</title>
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#e2ecf4] flex items-center justify-center min-h-screen font-nunito">
+    <div class="relative flex items-center justify-center gap-8">
+	    <svg svg id="clock" width="42" height="42" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_1_38" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+            <path d="M28.45 16.2652C28.45 22.7711 22.9797 28.2303 16 28.2303C9.02029 28.2303 3.55 22.7711 3.55 16.2652C3.55 9.75916 9.02029 4.3 16 4.3C22.9797 4.3 28.45 9.75916 28.45 16.2652Z" fill="black" stroke="white" stroke-width="7.1"></path>
+            </mask>
+            <g mask="url(#mask0_1_38)">
+            <path d="M10.75 26.5459C11.875 26.5459 12.6875 27.6974 16.125 27.6974C19.5 27.6974 20.125 26.5459 21.5625 26.5459C22.6323 26.5459 23.1155 29.038 24.3125 28.4853C25.625 27.8792 24.5625 26.7883 24.5625 25.3338C24.5625 23.8792 27.5 23.2732 27.5 15.8186C27.5 10.3031 24.3125 4.78832 15.875 4.72772C7.4375 4.66711 4 11.152 4 15.8186C4 23.0308 7.3125 23.6368 7.3125 25.3338C7.3125 26.6671 6.125 27.4736 7.3125 28.1823C8.32943 28.7891 9.625 26.5459 10.75 26.5459Z" fill="#1997F0"></path>
+        </g>
+            <path d="M12 2.46827C12 1.38561 8.32923 -1.68191 3.75686 1.20517C0.472487 3.85166 2.59767 8.24242 3.69246 8.24242C4.78725 8.24242 5.62445 5.91518 7.17004 4.69372C8.84442 3.37048 12 3.55092 12 2.46827Z" fill="#1997F0"></path>
+            <path d="M20 2.46827C20 1.38561 23.6708 -1.68191 28.2431 1.20517C31.5275 3.85166 29.4023 8.24242 28.3075 8.24242C27.2127 8.24242 26.3756 5.91518 24.83 4.69372C23.1556 3.37048 20 3.55092 20 2.46827Z" fill="#1997F0"></path>
+            <ellipse cx="15.5625" cy="17.1515" rx="2.1875" ry="2.12121" fill="#1997F0"></ellipse>
+            <path d="M14.5 12.4242V15.4546H16.5625V12.4242C16.625 12 16.525 11.1515 15.625 11.1515C14.725 11.1515 14.5 12 14.5 12.4242Z" fill="#1997F0"></path>
+            <path d="M19.8103 18.6961L17.2349 16.9798L16.0667 18.628L18.6421 20.3444C18.9672 20.6346 19.745 21.0353 20.2547 20.3161C20.7645 19.5968 20.1708 18.9364 19.8103 18.6961Z" fill="#1997F0"></path>
+        </svg>
+        <div class="bg-white shadow-2xl shadow-[#ccdae6] w-[460px] min-h-[200px] relative">
+            <div class="bg-white w-5 h-5 absolute -left-[10px] top-[45%] rotate-[45deg]"></div>
+            <h1 class="py-6 text-center bg-[#f9fbfa] text-[#3d4980] font-[800] text-2xl">SELECT TIME</h1>
+            <div class="flex items-center justify-center w-full gap-5 px-10 mt-10">
+                <label for="hour" class="w-1/3 bg-[#f9fbfc] p-3 border-[3px] rounded-md grow border-slate-200">
+                    <select id="hour" class="text-2xl w-full font-semibold bg-inherit text-[#32426f] outline-none">
+                        <option>00</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option selected>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                    </select>
+                </label>
+                <label for="hour" class="w-1/3 bg-[#f9fbfc] p-3 border-[3px] rounded-md grow border-slate-200">
+                    <select id="hour" class="text-2xl w-full font-semibold bg-inherit text-[#32426f] outline-none">
+                        <option>00</option>
+                        <option>05</option>
+                        <option>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>25</option>
+                        <option selected>30</option>
+                        <option>35</option>
+                        <option>40</option>
+                        <option>45</option>
+                        <option>50</option>
+                        <option>55</option>
+                    </select>
+                </label>
+            </div>
+            <button class="mx-10 mb-10 block bg-[#1d97f2] hover:bg-[#1376c2] py-3 px-10 mt-6 text-white rounded-md w-[83%] transition-all duration-200">SET ALARM</button>
+            
+        </div>
+    </div>
+</body>
+</html>

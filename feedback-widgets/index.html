@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body class="bg-[#f8f9fd] flex justify-center items-center min-h-screen flex-col gap-10">
+    <div class="flex items-start justify-center bg-white shadow-[0px_22px_15px_-8px_#E6E6F6] p-5 w-[380px] rounded-md flex-col text-[#222b43] relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-3 top-3 cursor-pointer hover:stroke-red-400 transition-all duration-150 ease-in" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#a4a5ad" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+        </svg>
+        <h1 class="w-2/3 text-center m-auto font-semibold">How likely are you to answer to this question?</h1>
+        
+        <ul class="flex items-center justify-center p-4 gap-4">
+            <li class="w-1/3 transition-all duration-150 ease-in hover:shadow-[0px_11px_15px_-8px_#E4E4F4] rounded-xl p-4 cursor-pointer">
+                <img src="https://cdn4.iconfinder.com/data/icons/emoji-18/61/12-256.png" class="w-[90%]">
+            </li>
+            <li class="w-1/3 transition-all duration-150 ease-in shadow-[0px_11px_15px_-8px_#E4E4F4] rounded-xl p-4 cursor-pointer">
+                <img src="https://cdn4.iconfinder.com/data/icons/emoji-18/61/25-256.png" class="w-[90%]">
+            </li>
+            <li class="w-1/3 transition-all duration-150 ease-in hover:shadow-[0px_11px_15px_-8px_#E4E4F4] rounded-xl p-4 cursor-pointer">
+                <img src="https://cdn4.iconfinder.com/data/icons/emoji-18/61/1-256.png" class="w-[90%]">
+            </li>
+        </ul>
+        <p class="mt-5 text-sm font-semibold mb-2">Tell us how we can improve</p>
+        <textarea placeholder="Write your message here" class="w-full p-3 border-2 border-[#eeeefc] outline-none rounded-md placeholder:text-sm"></textarea>
+
+        <div class="flex items-center justify-start mt-6 text-base text-slate-400 w-full">
+            <span class="grow">
+                <a href="#" class="hover:underline">Skip</a>
+            </span>
+            <span class="grow text-right">
+                <button class="rounded-md bg-[#3258db] text-white font-semibold py-2 px-6 transition-all ease-in duration-150 hover:bg-[#1a2c66]">Submit</button>
+            </span>
+        </div>
+    </div>
+    <div class="flex items-start justify-center bg-white shadow-[0px_22px_15px_-8px_#E6E6F6] p-5 w-[525px] rounded-md flex-col text-[#222b43] relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-3 top-3 cursor-pointer hover:stroke-red-400 transition-all duration-150 ease-in" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#a4a5ad" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+        </svg>
+        <h1 class="w-2/3 text-center m-auto font-semibold">How likely are you to answer to this question?</h1>
+        <ul class="flex items-center justify-start gap-[9px] w-full mt-10">
+            <li class="page">0</li>
+            <li class="page">1</li>
+            <li class="page">2</li>
+            <li class="page">3</li>
+            <li class="page">4</li>
+            <li class="page">5</li>
+            <li class="page">6</li>
+            <li class="page">7</li>
+            <li class="pageActive">8</li>
+            <li class="page">9</li>
+            <li class="page">10</li>
+        </ul>
+        <div class="flex items-center justify-start mt-2 text-sm text-slate-400 w-full">
+            <span class="grow">Not likely at all</span>
+            <span class="grow text-right">Extremely likely</span>
+        </div>
+        
+        <p class="mt-5 text-sm font-semibold mb-2">Tell us how we can improve</p>
+        <textarea placeholder="Write your message here" class="w-full p-3 border-2 border-[#eeeefc] outline-none rounded-md placeholder:text-sm"></textarea>
+
+        <div class="flex items-center justify-start mt-6 text-base text-slate-400 w-full">
+            <span class="grow">
+                <a href="#" class="hover:underline">Skip</a>
+            </span>
+            <span class="grow text-right">
+                <button class="rounded-md bg-[#3258db] text-white font-semibold py-2 px-6 transition-all ease-in duration-150 hover:bg-[#1a2c66]">Submit</button>
+            </span>
+        </div>
+    </div>
+    
+</body>
+</html>

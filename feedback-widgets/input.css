@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components { 
+    .page {
+        @apply grow aspect-square max-w-[35px] border-2 border-[#eeeefc] flex items-center justify-center rounded-md pl-4 pr-4 hover:shadow-[0px_11px_15px_-8px_#BEBECB] hover:border-[#3258db] hover:bg-[#3258db] hover:text-white transition-all duration-150 ease-in cursor-pointer;
+    }
+
+    .pageActive {
+        @apply grow aspect-square max-w-[35px] border-2 flex items-center justify-center rounded-md pl-4 pr-4 shadow-[0px_11px_15px_-8px_#BEBECB] border-[#292c56] bg-[#1b2b5f] text-white transition-all duration-150 ease-in cursor-pointer;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body class="bg-[#161529] flex justify-center items-center min-h-screen text-white">
+    <card class="w-full lg:w-[950px] bg-[#1b1933] m-4 p-6 md:p-20 rounded-lg flex flex-col justify-start items-start relative">
+        <div class="hover:bg-[#1b1933] transition-all ease-in duration-150 flex items-center cursor-pointer justify-center p-6 absolute right-0 top-0 bg-[#201d3e]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </div>
+        <h1 class="text-3xl">What's happening?</h1>
+        <p class="mt-2">Check all that apply.</p>
+        <label class="flex items-center gap-4 flex-row justify-center cursor-pointer mt-7">
+            <input type="checkbox" class="w-5 h-5 self-start mt-1">
+            <p class="font-normal text-lg self-start">Video Problem<small class="block text-[#9996b1] text-base">Blurry, cuts out, or looks in some way.</small></p>
+        </label>
+        <label class="flex items-center gap-4 flex-row justify-center cursor-pointer mt-7">
+            <input type="checkbox" class="w-5 h-5 self-start mt-1">
+            <p class="font-normal text-lg self-start">Sound Problem<small class="block text-[#9996b1] text-base">Hard to hear, not matched with video or missing in some parts.</small></p>
+        </label>
+        <label class="flex items-center gap-4 flex-row justify-center cursor-pointer mt-7">
+            <input type="checkbox" class="w-5 h-5 self-start mt-1">
+            <p class="font-normal text-lg self-start">Subtitles or caption problem<small class="block text-[#9996b1] text-base">Missing, hard to read, not matched with sound, misspellings or poor translations.</small></p>
+        </label>
+        <br>
+        <p class="text-lg">It's something else</p>
+        <textarea class="bg-[#18162d] rounded-md w-full md:w-[65%] h-40 mt-4 outline-none p-4 placeholder-[#716d8f]" placeholder="Let us know what's going on"></textarea>
+        <button class="text-[#1b1933] bg-[#f78d4c] pl-6 pr-6 text-center font-bold pt-4 pb-4 mt-5 rounded-lg">Submit Report</button>
+        <br>
+    </card>
+</body>
+</html>

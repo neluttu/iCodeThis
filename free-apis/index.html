@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body class="bg-[#fbfdff] flex justify-center items-center min-h-screen flex-row gap-10">
+    <div class="max-w-5xl mt-14 justify-center items-center m-auto ml-2 mr-2">
+        <h1 class="text-xl sm:text-3xl text-center font-bold w-[60%] m-auto text-slate-700">
+            A collective list of free APIs for use in software and web developement
+        </h1>
+         <input type="text" name="filter" id="filter" class="search p-6 border outline-none w-[80%] m-auto block mt-14 rounded-full pl-20 bg-[left_2rem_top_1.3rem] placeholder:font-normal" placeholder="Find development, games, images, APIs">
+         <h2 class="mt-10 mb-10 font-bold text-2xl text-slate-700">Featured APIs of this week</h2>
+         <script type="text/javascript">
+            $(document).ready(function(){
+            $("#filter").keyup(function(){
+                var filter = $(this).val(), count = 0;
+                var regex = new RegExp(filter, "i");
+                $(".list-item").each(function(){
+                    if ($(this).text().search(regex) < 0) $(this).hide();
+                    else {
+                        $(this).show();
+                        count++;
+                    }
+                    });
+                });
+            });
+            </script>         <ul class="list">
+            <li class="list-item">
+                <img src="https://pipedream.com/s.v0/app_m02h4K/logo/orig" alt="" width="46" class="absolute">
+                <h3>Hunter</h3>
+                <small>Data access</small>
+                <p>Hunter API makes it easy to find or verify professional email addresses.</p>
+                <div class="cta">
+                    <button class="bookmark">Bookmark</button>
+                    <button class="docs">API Docs</button>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629871894/team/d489837a033d4490b12f0f3a7f1ab88017547b618b94b687feb1b5b738ee9893" alt="" width="46" class="absolute">
+                <h3>Twilio</h3>
+                <small>Data access</small>
+                <p>Send and receive SMS and MMS messages as well as query meta-data about text messages.</p>
+                <div class="cta">
+                    <button class="bookmark">Bookmark</button>
+                    <button class="docs">API Docs</button>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://icon-library.com/images/whatsapp-png-icon/whatsapp-png-icon-9.jpg" alt="" width="46" class="absolute">
+                <h3>WhatsApp Business</h3>
+                <small>Automation</small>
+                <p>Hunter API makes it easy to find or verify professional email addresses</p>
+                <div class="cta">
+                    <button class="bookmark">Bookmark</button>
+                    <button class="docs">API Docs</button>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://images.ctfassets.net/fzn2n1nzq965/HTTOloNPhisV9P4hlMPNA/cacf1bb88b9fc492dfad34378d844280/Stripe_icon_-_square.svg?q=80&w=1082" alt="" width="46" class="absolute rounded-full">
+                <h3>Stripe</h3>
+                <small>Data access</small>
+                <p>A suite of payment APIs that powers commerce for online businesses of all sizes.</p>
+                <div class="cta">
+                    <button class="bookmark">Bookmark</button>
+                    <button class="docs">API Docs</button>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://uploads-ssl.webflow.com/635637c5d13ee9bd2b5feb65/635a652271ea3301b3b3f570_6357d768479d2e2c6f54a2aa_typeform%2520(1).png" alt="" width="46" class="absolute rounded-full">
+                <h3>Typeform</h3>
+                <small>Data access</small>
+                <p>Create, retreive, update and delete your typeforms, themes and images.</p>
+                <div class="cta">
+                    <button class="bookmark">Bookmark</button>
+                    <button class="docs">API Docs</button>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://img.utdstc.com/icon/b20/d65/b20d653d14ee023fa89b77922c0f88c1ae70c76629d2c42b7a23d4d07cbd5873:100" alt="" width="46" class="absolute rounded-full">
+                <h3>BlaBlaCar</h3>
+                <small>Automation</small>
+                <p>Automation</p>
+                <div class="cta">
+                    <button class="bookmark">Bookmark</button>
+                    <button class="docs">API Docs</button>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://www.met.no/_/image/21080170-4230-40e2-bd6b-f0459d84dd1f:6803abd109620bed8395038e7b962be3750c06b0/block-512-512/YR_blaa_rgb.png" alt="" width="46" class="absolute rounded-full">
+                <h3>Meteorologisk</h3>
+                <small>Data access</small>
+                <p>Weather and climate data.</p>
+                <div class="cta">
+                    <button class="bookmark">Bookmark</button>
+                    <button class="docs">API Docs</button>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://play-lh.googleusercontent.com/SWbS8z3NqFVHCEQc_6l-ZDdDj5qPGrWSK8hEWRSPHYm9s8958y6nTnoLolVHXlgKfXw=w240-h480-rw" alt="" width="46" class="absolute rounded-full">
+                <h3>Asana</h3>
+                <small>Data access</small>
+                <p>Customize the Asana experience, leverage your data with the Asana API.</p>
+                <div class="cta">
+                    <button class="bookmark">Bookmark</button>
+                    <button class="docs">API Docs</button>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://s3.amazonaws.com/www-inside-design/uploads/2018/10/mailchimp-sq-810x810.jpg" alt="" width="46" class="absolute rounded-full">
+                <h3>Mailchimp</h3>
+                <small>Automation</small>
+                <p>Email marketing, ads, landing pages and CRM tools to grow your business on your terms.</p>
+                <div class="cta">
+                    <button class="bookmark">Bookmark</button>
+                    <button class="docs">API Docs</button>
+                </div>
+            </li>
+         </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body class="bg-[#1e1d2e] flex justify-center items-center min-h-screen text-white relative">
+    <div class="p-14 bg-[#242336] rounded-xl w-[424px] z-10">
+        <h2 class="font-semibold text-2xl mb-8">Get email updates when:</h2>
+        <label class="group checkboxLabel" for="one">
+            <input name="Type" type="checkbox" id="one" class="hidden">
+            <span class="unchecked boxy">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hidden" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 12l5 5l10 -10" />
+                </svg>
+            </span>
+            <span>You're the owner</span>
+        </label>
+        <label class="group checkboxLabel" for="two">
+            <input name="Type" type="checkbox" id="two" class="hidden">
+            <span class="unchecked boxy">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hidden" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 12l5 5l10 -10" />
+                </svg>
+            </span>
+            <span>You're the assignee</span>
+        </label>
+        <label class="flex checkboxLabel" for="three">
+            <input name="Type" type="checkbox" id="three" class="hidden" checked>
+            <span class="checked boxy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 12l5 5l10 -10" />
+                </svg>
+            </span>
+            <span>You're the reporter</span>
+        </label>
+        <label class="flex checkboxLabel" for="four">
+            <input name="Type" type="checkbox" id="four" class="hidden" checked>
+            <span class="checked boxy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 12l5 5l10 -10" />
+                </svg>
+            </span>
+            <span>Someone mentions you</span>
+        </label>
+        <label class="group checkboxLabel" for="five">
+            <input name="Type" type="checkbox" id="five" class="hidden">
+            <span class="unchecked boxy">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hidden" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 12l5 5l10 -10" />
+                </svg>
+            </span>
+            <span>Someone is assigning you</span>
+        </label>
+        <p class="mt-8 bg-[#1e1d2e] p-4 text-[#9897a9] text-[0.8125rem] w-full block mb-12">
+            You may also receive other email notifications your admin configured. <a href="#" class="text-[#716af3] underline hover:no-underline">Learn more</a>
+        </p>
+        <h2 class="font-semibold text-2xl mb-8">Email format:</h2>
+        <label class="group radioLabel" for="radioOne">
+            <input type="radio" name="Radio" id="radioOne" class="hidden">
+            <span class="unchecked rounded-full boxy">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hidden" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" stroke-width="0" fill="currentColor" />
+                </svg>
+            </span>
+            <span>HTML</span>
+        </label>
+        <label class="group radioLabel" for="radioTwo">
+            <input type="radio" name="Radio" id="radioTwo" checked="checked" class="hidden">
+            <span class="checked rounded-full boxy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" stroke-width="0" fill="currentColor" />
+                  </svg>
+            </span>
+            <span>Text</span>
+        </label>
+        <button class="w-full bg-[#716af3] p-6 mt-12 rounded-md font-semibold text-xl transition-all duration-150 ease-in hover:bg-[#191829]">Save</button>
+        <script>
+            // Get all radio button elements
+            const radioButtons = document.querySelectorAll('input[type="radio"][name="Radio"]');
+
+            radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('change', () => {
+                
+                radioButtons.forEach(radio => {
+                
+                const label = radio.parentNode;
+                const span = label.querySelector('span.boxy');
+                const svg = label.querySelector('svg');
+
+                if (radio.checked) {
+                    span.classList.add('checked');
+                    span.classList.remove('unchecked');
+                    svg.classList.add('inline-block');
+                    svg.classList.remove('hidden');
+                } else {
+                    span.classList.remove('checked');
+                    span.classList.add('unchecked');
+                    svg.classList.remove('inline-block');
+                    svg.classList.add('hidden');
+                }
+                });
+            });
+            });
+
+
+            const labels = document.querySelectorAll('.checkboxLabel');
+            
+            labels.forEach(label => {
+              label.addEventListener('click', () => {
+                const checkbox = label.querySelector('input[type="checkbox"]');
+                const svg = label.querySelector('svg');
+                const boxy = label.querySelector('.boxy');
+
+                checkbox.checked = !checkbox.checked;
+
+                if(checkbox.checked) {
+                    svg.classList.remove('hidden');
+                    boxy.classList.remove('unchecked');
+                    boxy.classList.add('checked');
+                }
+                else { 
+                    svg.classList.add('hidden');
+                    boxy.classList.add('unchecked');
+                    boxy.classList.remove('checked');
+                }
+
+              });
+            });
+            
+           
+        </script>
+    </div>
+    <div class="absolute bg-[#191829] bottom-0 w-[550px] rounded-tl-3xl rounded-tr-3xl min-h-[70%] -z-1"></div>
+</body>
+</html>

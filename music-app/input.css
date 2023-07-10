@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    #songs {
+    padding-right: 2px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    height: 100%;
+    width: 103%;
+    }
+
+    #songs::-webkit-scrollbar {
+    width: 0.5em;
+    }
+
+    #songs::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    }
+
+    #songs::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    }
+
+    #lists {
+        
+        overflow-x: scroll;
+        overflow-y:hidden;
+    }
+
+        #lists::-webkit-scrollbar {
+        width: 0em;
+        height: 5px;
+        margin-top: 4px;
+        border-radius: 50%;
+        }
+
+        #lists::-webkit-scrollbar-track {
+            background-color: transparent;
+            border-radius: 10px;
+        }
+    
+        #lists::-webkit-scrollbar-thumb {
+            background-color: #252a34; 
+            border-radius: 10px;
+        }
+ 
+        .smallPlayer {
+            @apply absolute bottom-16 bg-[#141923] w-full h-[70px] overflow-hidden transition-all duration-300 ease-in;
+        }
+}

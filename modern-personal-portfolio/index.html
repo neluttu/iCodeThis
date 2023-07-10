@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeThis.com daily challenge</title>
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#F5F5F5] flex items-start justify-center font-poppins text-[#1F1E26] scroll-smooth">
+	<div class="w-full md:w-[1440px] bg-white min-h-[200px] m-4" id="myPage">
+        <div class="px-6 py-4 md:px-16 md:py-10">
+            <header class="flex items-center justify-start gap-4">
+                <img src="https://avatars.githubusercontent.com/u/25511379?v=4" class="rounded-full lg:w-[240px] md:w-[140px] w-[80px]"> 
+                <p class="text-base font-semibold md:text-lg grow">&copy; Ionel Olariu</p>
+                <ul class="flex items-center justify-center gap-1 text-lg font-normal list-none">
+                    <li><a class="md:block hidden px-8 py-3 lg:px-10 lg:py-4 cursor-pointer rounded-full bg-[#1F1E26] text-white border-[#1F1E26]" href="index.html">About</a></li>
+                    <li><a class="hidden px-8 py-3 border border-transparent rounded-full cursor-pointer md:block lg:px-10 lg:py-4 hover:border hover:border-slate-300" href="#work">Work</a></li>
+                    <li><a href="#solutions" class="hidden px-8 py-3 border border-transparent rounded-full cursor-pointer md:block lg:px-10 lg:py-4 hover:border hover:border-slate-300">Solutions</a></li>
+                    <li>
+                        <span class="md:hidden aspect-square w-[36px] flex items-center justify-center cursor-pointer border rounded-full border-slate-300 group hover:bg-[#1f1e26] hover:border-[#1f1e26] transition-all duration-150 ease-in" onclick="mobileMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="transition-all duration-150 ease-in group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#1F1E26" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+            </header>
+            <div id="mobileMenu" class="overflow-hidden transition-all duration-1000 ease-out mobileMenu max-h-0">
+                <a href="index.html" class="inline-block px-3 py-2 lg:px-10 lg:py-4 cursor-pointer rounded-full bg-[#1F1E26] text-white border-[#1F1E26] mt-10">About</a>
+                <a href="#work" class="inline-block px-3 py-2 border border-transparent rounded-full cursor-pointer md:block lg:px-10 lg:py-4 hover:border hover:border-slate-300">Work</a>
+                <a href="#solutions" class="inline-block px-3 py-2 border border-transparent rounded-full cursor-pointer md:block lg:px-10 lg:py-4 hover:border hover:border-slate-300">Solutions</a>
+            </div>
+            <script>
+                function mobileMenu() { var slideContent = document.getElementById("mobileMenu"); slideContent.classList.toggle("open"); } </script>
+
+            <h1 class="lg:leading-[70px] leading-[50px] md:text-4xl lg:text-5xl text-3xl md:font-normal font-[500] w-full md:w-[80%] mt-10">
+                I'm Ionel, and I turn ideas into digital experiences that people love.
+            </h1>
+            <p class="max-w-xl mt-10 text-sm leading-normal md:text-xl md:leading-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            <div class="flex items-center justify-start gap-1 mt-14 group">
+                <button class="button">
+                    Start a project
+                </button>
+                <span class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="transition-all duration-150 ease-in cursor-pointer group-hover:rotate-45" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M17 7l-10 10" />
+                        <path d="M8 7l9 0l0 9" />
+                    </svg>
+                </span>
+            </div>
+            <div class="ml-0 md:ml-[30%] md:text-4xl text-lg font-[500] md:font-[400] md:leading-[50px] leading-[30px] mt-28">
+                <p class="mb-10">Welcome, make yourself at home. I am a multidisciplinary web designer, designing and building beautiful digital products, for companies around the world.</p>
+                <p>I believe that design should be both functional and aesthetically pleasing, and I am dedicated to delivering exceptional user experiences through thoughtful design and meticulous attention to detail.</p>
+                <div class="flex items-center justify-start gap-3 mt-10 group">
+                    <a href="#" class="text-lg font-[500] border-b-2 border-[#1f1e26] hover:text-[#483ED0]">Download resume</a>
+                    <button class="rounded-full bg-[#483ED0] p-2 group-hover:bg-[#7166FF] transition-all duration-150 ease-in">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="transition-all duration-150 ease-in group-hover:rotate-45" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M17 7l-10 10" />
+                            <path d="M8 7l9 0l0 9" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <hr class="mt-32 mb-16">
+            <a href="#work"></a>
+            <h2 class="md:text-6xl text-4xl font-[500]">The  work I do</h2>
+            <ul class="flex items-center justify-start w-full mt-16">
+                <li class="flex items-center justify-start gap-2 text-base md:gap-3 grow md:text-xl">
+                    <button class="filter-selected" id="all">All</button>
+                    <button class="filter" id="design">Design</button>
+                    <button class="filter" id="development">Development</button>
+                </li>
+                <li class="hidden md:flex md:gap-2">
+                    <button class="work-display-selected" id="grid">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="6" height="6"/>
+                            <rect x="10" width="6" height="6"/>
+                            <rect y="10" width="6" height="6"/>
+                            <rect x="10" y="10" width="6" height="6"/>
+                        </svg>
+                    </button>
+                    <button class="work-display" id="list">
+                        <svg width="16" height="16" viewBox="0 0 20 12" class="" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="8" width="20" height="4" />
+                            <rect width="20" height="4"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <ul id="work" class="work-grid">
+                <li class="work-grid-li">
+                    <div class="work-grid-div design development">
+                        <a name="modal-one"></a>
+                        <div class="work-grid-img">
+                            <a href="#modal-01" target="_self"><img src="https://neluttu.github.io/modern-personal-portfolio/images/sample_01.jpg" id="open" class="cursor-pointer"></a>
+                        </div>
+                        <span class="flex flex-col items-start justify-start md:justify-center grow">
+                            <h3 class="mt-10 text-4xl mb-4 font-[500]">UIDeli.com</h3>
+                            <p class="font-[500] text-lg">Design + Development 2023</p>
+                            <p class="hidden mt-10 text-lg more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                        </span>
+                        <!-- first modal -->
+                        <div class="relative z-10 invisible transition-all duration-300 opacity-0 group target:visible target:opacity-100" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="modal-01">
+                            <div class="fixed inset-0 z-10 overflow-y-auto">
+                              <div class="relative block w-full min-h-full overflow-hidden text-left transition-all duration-300 transform bg-white opacity-75 group-target:scale-100 group-target:opacity-100">
+                                <div class="flex flex-col w-full h-full bg-white">
+                                    <div class="flex items-center justify-end w-full px-5 md:px-12 py-5 bg-[#1F1E26]">
+                                        <a href="#modal-one" class="block p-2 border rounded-full md:p-7 border-white/20" target="_self">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path d="M18 6l-12 12" />
+                                                <path d="M6 6l12 12" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="w-[96%] md:w-[70%] m-auto mt-20 md:m-auto md:mt-40 bg-white">
+                                        <h3 class="text-lg font-semibold md:text-2xl">UIDeli.com</h3>
+                                        <p class="text-3xl md:text-5xl font-[500] mt-10 md:leading-relaxed leading-relaxed">
+                                            Helping UIDeli.com give their users the best online experience.
+                                        </p>
+                                        <img src="https://neluttu.github.io/modern-personal-portfolio/images/sample_01.jpg" class="w-full mt-10">
+                                        <hr class="mt-10 mb-10">
+                                        <ul class="flex flex-col items-start justify-start mb-16 md:flex-row gap-y-6">
+                                            <li class="self-stretch w-full md:w-1/3">
+                                                <div class="flex items-start justify-start gap-3 group">
+                                                    <a href="#" class="text-lg font-[500] border-b-2 border-[#1f1e26] hover:text-[#483ED0]">Visite website</a>
+                                                    <button class="rounded-full bg-[#483ED0] p-2 group-hover:bg-[#7166FF] transition-all duration-150 ease-in">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="transition-all duration-150 ease-in group-hover:rotate-45" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M17 7l-10 10" />
+                                                            <path d="M8 7l9 0l0 9" />
+                                                        </svg>
+                                                    </button>
+                                                </div>                        
+                                            </li>
+                                            <li class="self-stretch w-full md:w-2/3">
+                                                <h4 class="text-4xl font-[500] mb-8">About uideli.com</h4>
+                                                <p>Sunt eu labore minim labore irure voluptate culpa culpa veniam dolore. Laboris ea labore et consequat exercitation officia. Commodo amet magna elit nulla consequat id irure dolore enim quis. Tempor est aliquip eiusmod ex duis consectetur.</p>
+                                                <h4 class="text-4xl font-[500] mt-16 mb-8">The project</h4>
+                                                <p class="mb-10">Sunt eu labore minim labore irure voluptate culpa culpa veniam dolore. Laboris ea labore et consequat exercitation officia. </p>
+                                                <button class="filter">Design</button>
+                                                <button class="filter">Development</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>  
+                    <div class="work-grid-div design">
+                        <a name="modal-two"></a>
+                        <div class="work-grid-img">
+                            <a href="#modal-02"><img src="https://neluttu.github.io/modern-personal-portfolio/images/sample_03.jpg"></a>
+                        </div>
+                        <span class="flex flex-col items-start justify-center grow">
+                            <h3 class="mt-10 text-4xl mb-4 font-[500]">Switch Black</h3>
+                            <p class="font-[500] text-lg">Design 2023</p>
+                            <p class="hidden mt-10 text-lg more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                        </span>
+                        <div class="relative z-10 invisible transition-all duration-300 opacity-0 group target:visible target:opacity-100" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="modal-02">
+                            <div class="fixed inset-0 z-10 overflow-y-auto">
+                              <div class="relative block w-full min-h-full overflow-hidden text-left transition-all duration-300 transform bg-white opacity-75 group-target:scale-100 group-target:opacity-100">
+                                <div class="flex flex-col w-full h-full bg-white">
+                                    <div class="flex items-center justify-end w-full px-5 md:px-12 py-5 bg-[#1F1E26]">
+                                        <a href="#modal-two" class="block p-2 border rounded-full md:p-7 border-white/20" target="_self">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path d="M18 6l-12 12" />
+                                                <path d="M6 6l12 12" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="w-[96%] md:w-[70%] m-auto mt-20 md:m-auto md:mt-40 bg-white">
+                                        <h3 class="text-lg font-semibold md:text-2xl">Switch Black</h3>
+                                        <p class="text-3xl md:text-5xl font-[500] mt-10 md:leading-relaxed leading-relaxed">
+                                            Helping UIDeli.com give their users the best online experience.
+                                        </p>
+                                        <img src="https://neluttu.github.io/modern-personal-portfolio/images/sample_03.jpg" class="w-full mt-10">
+                                        <hr class="mt-10 mb-10">
+                                        <ul class="flex flex-col items-start justify-start mb-16 md:flex-row gap-y-6">
+                                            <li class="self-stretch w-full md:w-1/3">
+                                                <div class="flex items-start justify-start gap-3 group">
+                                                    <a href="#" class="text-lg font-[500] border-b-2 border-[#1f1e26] hover:text-[#483ED0]">Visite website</a>
+                                                    <button class="rounded-full bg-[#483ED0] p-2 group-hover:bg-[#7166FF] transition-all duration-150 ease-in">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="transition-all duration-150 ease-in group-hover:rotate-45" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M17 7l-10 10" />
+                                                            <path d="M8 7l9 0l0 9" />
+                                                        </svg>
+                                                    </button>
+                                                </div>                        
+                                            </li>
+                                            <li class="self-stretch w-full md:w-2/3">
+                                                <h4 class="text-4xl font-[500] mb-8">About uideli.com</h4>
+                                                <p>Sunt eu labore minim labore irure voluptate culpa culpa veniam dolore. Laboris ea labore et consequat exercitation officia. Commodo amet magna elit nulla consequat id irure dolore enim quis. Tempor est aliquip eiusmod ex duis consectetur.</p>
+                                                <h4 class="text-4xl font-[500] mt-16 mb-8">The project</h4>
+                                                <p class="mb-10">Sunt eu labore minim labore irure voluptate culpa culpa veniam dolore. Laboris ea labore et consequat exercitation officia. </p>
+                                                <button class="filter">Design</button>
+                                                <button class="filter">Development</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="work-grid-div development">
+                        <div class="work-grid-img">
+                            <img src="https://neluttu.github.io/modern-personal-portfolio/images/sample_05.jpg">
+                        </div>
+                        <span class="flex flex-col items-start justify-center grow">
+                            <h3 class="mt-10 text-4xl mb-4 font-[500]">Another One</h3>
+                            <p class="font-[500] text-lg">Development 2023</p>
+                            <p class="hidden mt-10 text-lg more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                        </span>
+                    </div>
+                </li>
+                <li class="work-grid-li">
+                    <div class="work-grid-div development">
+                        <div class="work-grid-img">
+                            <img src="https://neluttu.github.io/modern-personal-portfolio/images/sample_02.jpg">
+                        </div>
+                        <span class="flex flex-col items-start justify-center grow">
+                            <h3 class="mt-10 text-4xl mb-4 font-[500]">Koto Studio</h3>
+                            <p class="font-[500] text-lg">Development 2023</p>
+                            <p class="hidden mt-10 text-lg more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                        </span>
+                    </div>
+                    <div class="work-grid-div development">
+                        <div class="work-grid-img">
+                            <img src="https://neluttu.github.io/modern-personal-portfolio/images/sample_04.jpg">
+                        </div>
+                        <span class="flex flex-col items-start justify-center grow">
+                            <h3 class="mt-10 text-4xl mb-4 font-[500]">ReMarket</h3>
+                            <p class="font-[500] text-lg">Development 2023</p>
+                            <p class="hidden mt-10 text-lg more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                        </span>
+                    </div>
+                    <div class="work-grid-div design development">
+                        <div class="work-grid-img">
+                            <img src="https://neluttu.github.io/modern-personal-portfolio/images/sample_06.jpg">
+                        </div>
+                        <span class="flex flex-col items-start justify-center grow">
+                            <h3 class="mt-10 text-4xl mb-4 font-[500]">Blender Renders</h3>
+                            <p class="font-[500] text-lg">Design + Development 2023</p>
+                            <p class="hidden mt-10 text-lg more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <button class="px-8 py-3 lg:px-10 lg:py-6 cursor-pointer rounded-full bg-white border border-[#CACACC] text-lg hover:border hover:border-[#1F1E26] hover:bg-[#1F1E26] hover:text-white transition-all duration-150 ease-in block m-auto">Load more</button>
+            
+            <script>
+                const allButton = document.getElementById("all");
+                const designButton = document.getElementById("design");
+                const developmentButton = document.getElementById("development");
+
+                const gridButton = document.getElementById("grid");
+                const listButton = document.getElementById("list");
+                const workContainer = document.getElementById("work");
+                const moreInfo = document.querySelectorAll('.more-info');
+
+                allButton.addEventListener("click", showAll);
+                designButton.addEventListener("click", showDesign);
+                developmentButton.addEventListener("click", showDevelopment);
+                gridButton.addEventListener("click", showGrid);
+                listButton.addEventListener("click", showList);
+
+                function showAll() {
+                const divs = workContainer.querySelectorAll("#work > li > div");
+                divs.forEach((div) => {
+                    div.style.display = "flex";
+                    
+                    allButton.classList.add("filter-selected");
+                    designButton.classList.add("filter");
+                    designButton.classList.remove("filter-selected");
+                    developmentButton.classList.add("filter");
+                    developmentButton.classList.remove("filter-selected");
+                    }
+                );
+                }
+
+                function showDesign() {
+                const divs = workContainer.querySelectorAll("#work > li > div");
+                divs.forEach((div) => {
+                    if (div.classList.contains("design")) {
+                    div.style.display = "flex";
+                    } else {
+                    div.style.display = "none";
+                    }
+                    designButton.classList.add("filter-selected");
+
+                    allButton.classList.add("filter");
+                    allButton.classList.remove("filter-selected");
+                    developmentButton.classList.add("filter");
+                    developmentButton.classList.remove("filter-selected");
+                });
+                }
+
+                function showDevelopment() {
+                const divs = workContainer.querySelectorAll("#work > li > div");
+                divs.forEach((div) => {
+                    if (div.classList.contains("development")) {
+                    div.style.display = "flex";
+                    } else {
+                    div.style.display = "none";
+                    developmentButton.classList.add("filter-selected");
+
+                    allButton.classList.add("filter");
+                    allButton.classList.remove("filter-selected");
+                    designButton.classList.add("filter");
+                    designButton.classList.remove("filter-selected");
+                    }
+                });
+                }
+
+                function showGrid() {
+                    const elements = document.querySelectorAll('[class^="work-col"]');
+                    elements.forEach(element => {
+                        element.className = element.className.replace(/(^|\s)work-col/g, '$1work-grid');
+                    });
+                    listButton.classList.remove("work-display-selected");
+                    listButton.classList.add("work-display");
+                    gridButton.classList.add("work-display-selected");
+                    gridButton.classList.remove("work-display");
+
+                    moreInfo.forEach(element => {
+                        element.classList.add('hidden');
+                    });
+
+                }
+
+                function showList() {
+                    const elements = document.querySelectorAll('[class^="work-grid"]');
+                    elements.forEach(element => {
+                        element.className = element.className.replace(/(^|\s)work-grid/g, '$1work-col');
+                    });
+
+                    gridButton.classList.remove("work-display-selected");
+                    gridButton.classList.add("work-display");
+                    listButton.classList.add("work-display-selected");
+                    listButton.classList.remove("work-display");
+
+                    moreInfo.forEach(element => {
+                        element.classList.remove('hidden');
+                    });
+                }
+
+            </script>
+        </div>
+        <a name="solutions"></a>
+        <footer class="w-full bg-[#1F1E26] min-h-[200px] px-8 py-10 md:px-16 md:pt-32 md:pb-10 text-[#ECEBF5]">
+            <h4 class="text-3xl md:text-5xl">What can I help you with</h4>
+
+            <ul class="flex flex-col items-center justify-start gap-10 mt-16 md:flex-row">
+                <li class="self-stretch basis-1/3">
+                    <span class="text-[#6A6A6B]">01</span>
+                    <hr class="border-[#6A6A6B] mt-4">
+                    <h5 class="mt-10 text-4xl">Design</h5>
+                    <p class="text-[#ECEBF5] leading-relaxed mt-6 font-[200] mb-6 max-w-[90%]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                    </p>
+                    <a href="#" class="text-2xl block mb-4 font-[300] hover:text-[#7166FF] transition-all duration-150 ease-linear">Websites</a>
+                    <a href="#" class="text-2xl block mb-4 font-[300] hover:text-[#7166FF] transition-all duration-150 ease-linear">Mobile apps</a>
+                    <a href="#" class="text-2xl block mb-4 font-[300] hover:text-[#7166FF] transition-all duration-150 ease-linear">Web apps</a>
+                    <a href="#" class="text-2xl block mb-4 font-[300] hover:text-[#7166FF] transition-all duration-150 ease-linear">Design systems</a>
+                    <a href="#" class="text-2xl block mb-4 font-[300] hover:text-[#7166FF] transition-all duration-150 ease-linear">Branding</a>
+                </li>
+                <li class="self-stretch basis-1/3">
+                    <span class="text-[#6A6A6B]">02</span>
+                    <hr class="border-[#6A6A6B] mt-4">
+                    <h5 class="mt-10 text-4xl">Development</h5>
+                    <p class="text-[#ECEBF5] leading-relaxed mt-6 font-[200] mb-6 max-w-[90%]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                    </p>
+                    <a href="#" class="text-2xl block mb-4 font-[300] hover:text-[#7166FF] transition-all duration-150 ease-linear">Websites</a>
+                    <a href="#" class="text-2xl block mb-4 font-[300] hover:text-[#7166FF] transition-all duration-150 ease-linear">Mobile apps</a>
+                    <a href="#" class="text-2xl block mb-4 font-[300] hover:text-[#7166FF] transition-all duration-150 ease-linear">Web apps</a>
+                </li>
+                <li class="self-stretch basis-1/3">
+                    <span class="text-[#6A6A6B]">03</span>
+                    <hr class="border-[#6A6A6B] mt-4">
+                    <h5 class="mt-10 text-4xl">Full Package</h5>
+                    <p class="text-[#ECEBF5] leading-relaxed mt-6 font-[200] mb-6 max-w-[90%]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                    </p>
+                    <a href="#" class="text-2xl block mb-4 font-[300] hover:text-[#7166FF] transition-all duration-150 ease-linear">Design + Development</a>
+                </li>
+            </ul>
+            <p class="mt-32 text-2xl md:text-4xl leading-relaxed max-w-[90%]">Get the Full Package, Design + Development with requests & revisions. No expensive hourly billing. Flat monthly rate. <br>Pause anytime.</p>
+            <div class="flex items-baseline justify-start gap-3 mt-10">
+                <span class="text-6xl">$2.999</span>
+                <span class="text-[#E5E3F5] font-[100]">/month</span>
+            </div>
+            <p class="mt-10 max-w-[60%] leading-relaxed text-[#ECEBF5] font-[200] mb-28">
+                Ideal for websites, web aps, and brand design projects, custom code solutions, blogs and app dashboard design.
+            </p>
+            <div class="flex items-center justify-start gap-1 mb-10 mt-14 group">
+                <img src="https://avatars.githubusercontent.com/u/25511379?v=4" class="rounded-full md:w-[80px] w-[50px] mr-6">
+                <button id="button-footer">
+                    Start a project
+                </button>
+                <span class="p-2 ml-2 arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="transition-all duration-150 ease-in cursor-pointer group-hover:rotate-45" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M17 7l-10 10" />
+                        <path d="M8 7l9 0l0 9" />
+                    </svg>
+                </span>
+            </div>
+            <p class="font-[200] text-lg text-[#ECEBF5] mb-24">Don't know fi fits you or not? &nbsp;&nbsp; <a href="#" class="pb-[1px] text-white border-b font-[300]">Let's have a call</a></p>
+
+            <span class="text-[#6A6A6B]">SOCIAL MEDIA</span>
+            <hr class="border-[#6A6A6B] mt-4 mb-10">
+            <div class="flex items-baseline justify-start gap-6 mb-10">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Github</a>
+                <a href="#">Dribble</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

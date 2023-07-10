@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeThis.com daily challenge</title>
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#f1f1f1] flex items-center justify-center min-h-screen">
+    <div class="relative w-full md:w-[664px] min-h-[50px] m-4">
+        <div class="bg-[#f5f5f5] shadow-[0px_0px_12px_1px_#D7D7D7] rounded-md flex items-center justify-start relative z-20">
+            <div class="block p-8 cursor-pointer" id="chevron">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#404f7f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 9l6 6l6 -6" />
+                </svg>
+            </div>
+            <input type="text" class="p-6 rounded-md text-2xl text-[#404f7f] cursor-[#404f7f] outline-none w-full grow border-2 border-[#d1eafa] mr-4" placeholder="Search">
+            <button class="flex shrink-0 rounded-tr-md rounded-br-md items-center self-stretch justify-center px-8 aspect-square bg-gradient-to-br from-[#18cfff] to-[#1999f7]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="" width="36" height="36" viewBox="0 0 24 24" stroke-width="2.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                </svg>
+            </button>
+        </div>
+        <div id="options" class="z-10 w-[30%] -mt-4 bg-[#f5f5f5] flex items-center justify-center rounded-md shadow-[0px_0px_12px_1px_#D7D7D7] pt-8 px-6 pb-6 flex-col gap-4">
+            <label class="flex items-center justify-start w-full gap-6 text-2xl cursor-pointer" for="articles">
+                <input type="checkbox" id="articles" name="articles" class="appearance-none cursor-pointer w-[24px] h-[24px] bg-white rounded-sm border-2 border-slate-300">
+                <span class="text-[#7476a1]">Articles</span>
+            </label>
+            <label class="flex items-center justify-start w-full gap-6 text-2xl cursor-pointer" for="products">
+                <input type="checkbox" checked id="products" name="products" class="appearance-none cursor-pointer w-[24px] h-[24px] bg-white rounded-sm border-2 border-slate-300 checked:bg-gradient-to-br checked:from-[#18cfff] checked:to-[#1999f7]">
+                <span class="text-[#7476a1]">Products</span>
+            </label>
+            <label class="flex items-center justify-start w-full gap-6 text-2xl cursor-pointer" for="services">
+                <input type="checkbox" id="services" name="services" class="appearance-none cursor-pointer w-[24px] h-[24px] bg-white rounded-sm border-2 border-slate-300 checked:bg-gradient-to-br checked:from-[#18cfff] checked:to-[#1999f7]">
+                <span class="text-[#7476a1]">Services</span>
+            </label>
+        </div>
+        
+    </div>
+</body>
+</html>

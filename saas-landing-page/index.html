@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeThis.com PRO challenge - SaaS landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body class="bg-[#F5F5F5] flex items-center justify-center font-dmsans">
+	<div class="w-full max-w-[1440px] bg-white min-h-[400px] relative overflow-hidden">
+        <div class="bg-black w-full text-center text-white text-sm font-normal py-2 z-20">
+            New! We launched our affiliate program! <a href="about:srcdoc#" class="underline hover:text-[#6DD1ED] transition-all ease-in duration-150">See more</a>
+        </div>
+        <nav class="flex items-center justify-center w-full md:max-w-[1200px] px-5 mx-auto mt-5">
+            <a href="about:srcdoc#" class="font-bold font-outfit text-[32px] hover:text-[#6DD1ED] transition-all duration-150 ease-in">launch</a>
+            <div class="grow hidden text-center sm:flex items-center justify-center gap-10 text-base font-[700]">
+                <a href="about:srcdoc#" class="hover:text-[#6DD1ED] transition-all ease-in duration-150">What is Launch?</a>
+                <a href="about:srcdoc#" class="hover:text-[#6DD1ED] transition-all ease-in duration-150">Pricing</a>
+                <a href="about:srcdoc#" class="hover:text-[#6DD1ED] transition-all ease-in duration-150">FAQ</a>
+            </div>
+            <button class="hidden md:block text-base font-[700] bg-[#E2F4F9] rounded-lg py-3 px-5 hover:bg-[#6DD1ED] hover:text-white transition-all duration-150 ease-in">Buy now</button>
+            <div class="sm:hidden grow md:grow-0 flex items-end justify-end text-right">
+                <svg class="cursor-pointer group" id="mobileMenuButton" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 7H21" stroke="black" stroke-width="1.5" stroke-linecap="round" class="group-hover:stroke-[#6DD1ED] transition-all duration-150 ease-in"/>
+                    <path d="M3 12H21" stroke="black" stroke-width="1.5" stroke-linecap="round" class="group-hover:stroke-[#6DD1ED] transition-all duration-150 ease-in"/>
+                    <path d="M3 17H21" stroke="black" stroke-width="1.5" stroke-linecap="round" class="group-hover:stroke-[#6DD1ED] transition-all duration-150 ease-in"/>
+                </svg>
+            </div>
+        </nav>
+        <div class="w-full relative block md:mt-14 py-16 px-3">
+            <svg width="298" height="414" viewBox="0 0 298 414" fill="none" xmlns="http://www.w3.org/2000/svg" class="lg:block hidden absolute bottom-0 left-0">
+                <path d="M-140.783 142.93C-126.572 155.411 -114.344 160.875 -79.9661 181.275C-68.7537 190.295 -62.9687 194.296 -49.4332 192.617C65.3378 178.354 126.126 146.759 142.978 142.468C149.064 140.043 154.94 137.121 160.547 133.732C163.291 131.967 160.941 128.314 158.523 128.576C147.378 132.428 136.447 136.878 125.781 141.907C77.6617 160.669 27.7907 174.581 -23.0913 183.438C-36.0586 185.455 -52.4442 191.989 -64.3877 185.47C-76.3614 178.99 -87.9128 171.759 -98.9725 163.819C-111.36 156.152 -124.941 149.534 -138.064 141.181C-140.719 139.01 -141.959 141.101 -140.783 142.93Z" fill="#191919"/>
+                <path d="M171.067 117.929C172.118 109.523 172.129 101.674 172.69 92.3542C172.312 87.4283 173.116 82.4833 175.035 77.9307C176.418 75.4492 178.392 73.3469 180.781 71.8101C183.17 70.2732 185.902 69.3492 188.733 69.1197C194.887 67.6296 201.147 66.624 207.458 66.1124C213.197 65.0066 219.526 64.8072 225.271 63.6983C227.68 63.4345 227.747 59.5193 224.745 58.8717C218.415 58.3219 212.042 58.5199 205.759 59.4617C195.193 61.0931 181.475 61.8991 173.074 68.8627C170.424 71.5087 168.376 74.6947 167.068 78.2036C165.76 81.7125 165.223 85.462 165.494 89.1969C165.177 98.5357 165.175 108.768 165.633 117.51C167.414 120.279 170.416 120.926 171.067 117.929Z" fill="#191919"/>
+                <path d="M211.444 80.3369C229.914 72.7075 249.114 61.4049 260.624 56.4332C266.679 53.8311 272.147 50.3143 278.237 47.6897C282.479 46.2545 278.496 50.1021 278.17 51.605C275.105 54.8693 272.601 59.0167 268.65 62.8927C257.554 73.7825 244.513 83.5829 232.901 93.6167C232.374 94.0389 232.022 94.6412 231.914 95.3074C231.805 95.9736 231.947 96.6565 232.312 97.2242C232.677 97.7919 233.24 98.2042 233.891 98.3816C234.542 98.5589 235.236 98.4887 235.839 98.1845C255.241 86.6133 272.175 71.3351 285.674 53.2215C286.972 51.957 287.81 50.2954 288.055 48.5003C288.301 46.7053 287.94 44.8795 287.03 43.3129C282.919 36.9209 272.579 44.8789 268.311 46.317C249.22 55.9821 230.645 66.6349 212.662 78.2324C208.768 78.1865 209.941 80.0106 211.444 80.3369Z" fill="#191919"/>
+                <path d="M270.887 110.528C270.059 116.12 267.558 121.329 263.713 125.472C259.781 129.294 255.123 132.29 250.014 134.283C249.047 134.261 248.094 134.529 247.28 135.052C246.466 135.576 245.827 136.331 245.446 137.221C245.125 138.721 246.62 139.045 248.123 139.372C254.003 140.649 263.341 133.94 267.565 129.452C270.013 126.817 271.872 123.691 273.019 120.282C274.165 116.873 274.573 113.26 274.214 109.681C273.839 108.081 271.209 109.028 270.887 110.528Z" fill="#191919"/>
+                <path d="M214.991 176.178C223.317 175.111 231.46 172.914 239.193 169.647C252.155 163.657 267.766 153.855 272.523 139.172C273.764 137.081 270.173 135.519 268.938 137.607C260.878 149.229 249.347 158.001 235.996 162.667C223.884 167.872 210.57 167.076 197.632 169.27C191.866 170.246 145.801 209.109 121.382 227.352C96.0957 246.244 69.586 263.247 43.1037 280.28C17.531 296.729 -9.19592 311.384 -36.8739 326.558C-50.0223 333.986 -63.9601 339.92 -78.4274 344.25C-89.5108 347.015 -101.114 346.929 -112.155 343.999C-127.118 340.94 -141.617 335.942 -155.286 329.131C-163.067 325.128 -170.227 321.961 -177.966 317.903C-185.517 313.681 -193.422 310.125 -201.59 307.275C-203.676 306.031 -205.243 309.625 -203.155 310.86C-191.057 320.468 -177.711 328.387 -163.482 334.403C-150.852 340.452 -137.729 345.411 -124.254 349.224C-112.839 352.554 -100.973 354.072 -89.0875 353.72C-74.8359 351.991 -61.0556 347.511 -48.5112 340.529C30.3205 303.941 130.506 233.583 195.463 175.872C200.178 179.248 211.664 177.025 214.991 176.178Z" fill="#191919"/>
+                <path d="M262.595 83.5869C261.029 87.1726 260.962 91.0877 258.805 93.7539C254.754 100.044 249.308 105.314 242.889 109.156C236.541 113.239 246.986 116.618 256.762 106.691C260.765 102.818 263.921 98.1562 266.029 93.0004C267.041 89.4865 267.303 85.7988 266.797 82.1772C265.333 81.8253 262.936 82.0745 262.595 83.5869Z" fill="#191919"/>
+            </svg>
+            <div class="mx-auto w-[90%] md:w-[800px] flex items-center justify-center flex-col">
+                <h1 class="font-bold md:mb-10 mb-4 tracking-tight text-[40px] md:text-[96px] leading-tight text-center font-outfit">Launch a SaaS product in style</h1>
+                <p class="text-[#364153] text-lg md:text-2xl tracking-tight text-center font-medium leading-relaxed">Create a stylish website easy and for everyone - SaaS Platforms, Technology Startups and more</p>
+            </div>
+            <div class="flex items-center justify-center flex-col md:flex-row gap-4 mt-10 text-base md:text-lg font-normal">
+                <button class="bg-black hover:bg-[#6DD1ED] hover:text-white transition-all duration-150 ease-in text-white w-[96%] md:w-auto p-4 md:p-6 rounded-md md:rounded-xl flex items-center justify-center gap-2">
+                    <span>Buy Now</span>
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_3199)">
+                            <path d="M0.40387 8H15.9031" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M8.74963 15.1534L15.9031 7.99994L8.74963 0.846436" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_3199">
+                                <rect width="17.1923" height="16" fill="white" transform="translate(0.40387)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <button class="bg-[#E2F4F9] text-black w-[96%] md:w-auto p-4 md:p-6 rounded-md md:rounded-xl tracking-tight font-medium hover:bg-[#6DD1ED] hover:text-white transition-all duration-150 ease-in">
+                    Preview in Figma
+                </button>
+            </div>
+        </div>
+        <div class="flex items-start justify-center gap-5 pb-20 overflow-hidden relative w-full">
+            <div class="absolute bottom-0 w-full h-2/3 gradient">
+            </div>
+            <img src="https://neluttu.github.io/saas-landing-page/images/site_01.jpg" class="max-w-[370px]">
+            <img src="https://neluttu.github.io/saas-landing-page/images/site_02.jpg" class="max-w-[370px]">
+            <img src="https://neluttu.github.io/saas-landing-page/images/site_03.jpg" class="max-w-[370px]">
+            <img src="https://neluttu.github.io/saas-landing-page/images/site_04.jpg" class="max-w-[370px]">
+        </div>
+        <div class="bg-black text-white py-32 font-outfit mb-20">
+            <h2 class="font-semibold text-[32px] lg:text-[56px] px-10 text-center">Customize however you want</h2>
+            <ul class="flex items-start justify-between flex-col lg:flex-row max-w-[1190px] mx-auto lg:px-0 px-10">
+                <li class="flex items-center w-full lg:w-1/4 justify-start flex-col mt-16">
+                    <span class="bg-[#B1E9F9] rounded-full w-[64px] flex items-center justify-center aspect-square mb-5">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.8998 14.0693H4.09982C2.59982 14.0693 1.99982 14.7093 1.99982 16.2993V20.3393C1.99982 21.9293 2.59982 22.5693 4.09982 22.5693H19.8998C21.3998 22.5693 21.9998 21.9293 21.9998 20.3393V16.2993C21.9998 14.7093 21.3998 14.0693 19.8998 14.0693Z" fill="black"/>
+                            <path d="M19.8998 2.56934H4.09982C2.59982 2.56934 1.99982 3.20934 1.99982 4.79934V8.83934C1.99982 10.4293 2.59982 11.0693 4.09982 11.0693H19.8998C21.3998 11.0693 21.9998 10.4293 21.9998 8.83934V4.79934C21.9998 3.20934 21.3998 2.56934 19.8998 2.56934Z" fill="black"/>
+                            </svg>
+                    </span>
+                    <h3 class="lg:text-2xl text-xl font-[500]">Modular design</h3>
+                    <p class="text-center text-base lg:text-lg font-[300] mt-4 leading-7 text-[#E7EBFB]">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                </li>
+                <li class="flex items-center w-full lg:w-1/4 justify-start flex-col mt-16">
+                    <span class="bg-[#B1E9F9] rounded-full w-[64px] flex items-center justify-center aspect-square mb-5">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.998 16.15L12.998 18.85C12.998 21.1 13.898 22 16.148 22L18.848 22C21.098 22 21.998 21.1 21.998 18.85L21.998 16.15C21.998 13.9 21.098 13 18.848 13L16.148 13C13.898 13 12.998 13.9 12.998 16.15Z" fill="black"/>
+                            <path d="M7.51805 2L15.478 2C18.528 2 20.998 4.47 20.998 7.52L20.998 10.5C20.998 11.05 20.548 11.5 19.998 11.5L15.498 11.5C13.288 11.5 11.498 13.29 11.498 15.5L11.498 20C11.498 20.55 11.048 21 10.498 21L7.51805 21C4.06805 21 1.99805 18.94 1.99805 15.48L1.99805 7.52C1.99805 4.47 4.46805 2 7.51805 2Z" fill="black"/>
+                            <path d="M4.8006 6.00005L9.6006 10.8" stroke="#B1E9F9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.59961 10.8L9.59961 10.8L9.59961 6.80005" stroke="#B1E9F9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <h3 class="lg:text-2xl text-xl font-[500]">Responsive sections</h3>
+                    <p class="text-center text-base lg:text-lg font-[300] mt-4 leading-7 text-[#E7EBFB]">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                </li> 
+                <li class="flex items-center w-full lg:w-1/4 justify-start flex-col mt-16">
+                    <span class="bg-[#B1E9F9] rounded-full w-[64px] flex items-center justify-center aspect-square mb-5">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.9998 2C6.47976 2 1.99976 6.48 1.99976 12C1.99976 17.52 6.47976 22 11.9998 22C17.5198 22 21.9998 17.52 21.9998 12C21.9998 6.48 17.5198 2 11.9998 2ZM15.5298 13.23L10.3498 16.82C9.58976 17.35 9.14976 17.04 9.36975 16.15L10.3198 12.31L8.66975 11.9C7.91976 11.72 7.82976 11.2 8.45975 10.76L13.6398 7.17C14.3998 6.64 14.8398 6.95 14.6198 7.84L13.6698 11.68L15.3198 12.09C16.0698 12.28 16.1598 12.79 15.5298 13.23Z" fill="black"/>
+                        </svg>
+                    </span>
+                    <h3 class="lg:text-2xl text-xl font-[500]">Professional design</h3>
+                    <p class="text-center text-base lg:text-lg font-[300] mt-4 leading-7 text-[#E7EBFB]">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                </li>
+                <li class="flex items-center w-full lg:w-1/4 justify-start flex-col mt-16">
+                    <span class="bg-[#B1E9F9] rounded-full w-[64px] flex items-center justify-center aspect-square mb-5">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.6503 4.59003C16.8903 2.99003 14.5603 2.03003 12.0003 2.03003C6.50027 2.03003 2.03027 6.50003 2.03027 12C2.03027 17.5 6.50027 21.97 12.0003 21.97C14.5603 21.97 16.8903 21.01 18.6503 19.41C20.6903 17.6 21.9703 14.94 21.9703 12C21.9703 9.06003 20.6903 6.40003 18.6503 4.59003ZM11.9703 16.39C11.9503 18.04 10.7203 18.44 9.57027 17.98C7.20027 17.03 5.53027 14.71 5.53027 12C5.53027 9.29003 7.20027 6.97003 9.57027 6.01003C10.7203 5.55003 11.9503 5.96003 11.9703 7.60003V16.39Z" fill="black"/>
+                        </svg>
+                    </span>
+                    <h3 class="lg:text-2xl text-xl font-[500]">Light and dark theme</h3>
+                    <p class="text-center text-base lg:text-lg font-[300] mt-4 leading-7 text-[#E7EBFB]">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex items-center justify-center w-full lg:px-20 px-4 font-outfit flex-col lg:flex-row gap-8 mb-20 lg:mb-40 mt-40">
+            <div class="flex-1 mb-10 w-full lg:w-1/2">
+                <h4 class="text-[32px] lg:text-[56px] inline-block font-bold leading-tight">Save time and<br> design fast</h4>
+                <p class="text-base lg:text-lg mt-5 inline-block text-[#364153]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="lg:w-1/2 w-full lg:pl-6">
+                <img src="https://neluttu.github.io/saas-landing-page/images/site_02.jpg" alt="" class="max-w-[80%] mx-auto">
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center w-full lg:px-20 px-4 font-outfit flex-col-reverse lg:flex-row gap-8 mb-20 lg:mb-40">
+            <div class="lg:w-1/2 w-full lg:pl-6">
+                <img src="https://neluttu.github.io/saas-landing-page/images/site_04.jpg" alt="" class="max-w-[80%] mx-auto">
+            </div>
+            <div class="flex-1 mb-10 w-full lg:w-1/2">
+                <h4 class="text-[32px] lg:text-[56px] inline-block font-bold leading-tight">Put the spotlight on your product’s features.</h4>
+                <p class="text-base lg:text-lg mt-5 inline-block text-[#364153]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center w-full lg:px-20 px-4 font-outfit flex-col lg:flex-row gap-8 mb-20 lg:mb-40">
+            <div class="flex-1 mb-10 w-full lg:w-1/2">
+                <h4 class="text-[32px] lg:text-[56px] inline-block font-bold leading-tight">Put the spotlight on your product’s features.</h4>
+                <p class="text-base lg:text-lg mt-5 inline-block text-[#364153]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="lg:w-1/2 w-full lg:pl-6">
+                <img src="https://neluttu.github.io/saas-landing-page/images/site_03.jpg" alt="" class="max-w-[80%] mx-auto">
+            </div>
+        </div>
+
+        <div class="px-10 lg:px-40 mb-20 lg:mb-40">
+            <p class="text-center text-base my-3 font-[500]">Production ready</p>
+            <h2 class="text-center font-outfit text-[32px] lg:text-[56px] font-bold">
+                Showcase some impressive features
+            </h2>
+            <p class="text-center text-lg text-[#364153] my-3 font-normal max-w-xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <!-- boxes -->
+        <ul class="flex flex-wrap justify-evenly lg:gap-10 md:gap-6 gap-5 px-4 lg:px-20 py-10 font-outfit overflow-hidden">
+            <li class="w-full lg:w-[30%] md:w-[46%] rounded-3xl self-stretch min-h-[300px] p-8 bg-[#6DD1ED] text-black hover:shadow-xl transition-all duration-150 ease-in">
+                <h5 class="font-bold tracking-tight text-[40px] leading-tight">Build for Consistancy</h5>
+                <p class="text-base font-normal mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+            </li>
+            <li class="w-full lg:w-[30%] md:w-[46%] flex items-center justify-center rounded-3xl self-stretch min-h-[300px] p-8 text-black bg-[#E8ECED] hover:shadow-xl transition-all duration-150 ease-in">
+                <div class="w-[72px] flex items-center justify-center aspect-square border-4 border-white rounded-full bg-[#6DD1ED] text-xl font-semibold z-10 hover:z-20 cursor-pointer">
+                    VC
+                </div>
+                <div class="-ml-4 w-[72px] flex items-center justify-center aspect-square border-4 border-white rounded-full bg-[#E8ECED] text-xl font-semibold cursor-pointer z-10 hover:z-20">
+                    <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.0005 2.75003C11.7255 2.75003 9.06299 5.41253 9.06299 8.68753C9.06299 11.9 11.5755 14.5 14.8505 14.6125C14.9505 14.6 15.0505 14.6 15.1255 14.6125C15.1505 14.6125 15.163 14.6125 15.188 14.6125C15.2005 14.6125 15.2005 14.6125 15.213 14.6125C18.413 14.5 20.9255 11.9 20.938 8.68753C20.938 5.41253 18.2755 2.75003 15.0005 2.75003Z" fill="black"/>
+                        <path d="M21.3507 17.9375C17.8632 15.6125 12.1757 15.6125 8.66318 17.9375C7.07568 19 6.20068 20.4375 6.20068 21.975C6.20068 23.5125 7.07568 24.9375 8.65068 25.9875C10.4007 27.1625 12.7007 27.75 15.0007 27.75C17.3007 27.75 19.6007 27.1625 21.3507 25.9875C22.9257 24.925 23.8007 23.5 23.8007 21.95C23.7882 20.4125 22.9257 18.9875 21.3507 17.9375Z" fill="black"/>
+                    </svg>
+                </div>
+                <div class="-ml-4 w-[72px] flex items-center justify-center aspect-square border-4 border-white rounded-full bg-[#E8ECED] text-xl font-semibold overflow-hidden z-10 cursor-pointer">
+                    <img src="https://avatars.githubusercontent.com/u/25511379?v=4">
+                </div>
+            </li>
+            <li class="w-full lg:w-[30%] md:w-[46%] flex items-center justify-center rounded-3xl self-stretch min-h-[300px] p-8 text-black bg-[#E8ECED] hover:shadow-xl transition-all duration-150 ease-in">
+                <div class="w-[90%]">
+                    <div class="bg-black h-[32px] flex items-center justify-center px-2 gap-2">
+                        <div class="w-1/2">
+                            <span class="block bg-white h-[11px] w-[40px]"></span>
+                        </div>
+                        <div class="w-1/2 text-right">
+                            <span class="inline-block w-[60%] bg-white h-[11px] mr-1"></span>
+                            <span class="inline-block w-[25%] bg-white h-[11px]"></span>
+                        </div>
+                    </div>
+                    <div class="bg-white w-full flex items-center gap-3 px-2 py-6">
+                        <span class="inline-block w-1/2 self-stretch">
+                            <p class="font-bold">Headers</p>
+                            <p class="bg-[#E8ECED] h-3"></p>
+                            <p class="bg-[#6DD1ED] h-3 w-1/3 mt-2"></p>
+                        </span>
+                        <span class="inline-block w-1/2 bg-[#E8ECED] h-[70px] self-stretch"></span>
+                    </div>
+                </div>
+            </li>
+            <li class="w-full lg:w-[30%] md:w-[46%] flex items-center justify-center rounded-3xl self-stretch min-h-[300px] p-8 text-black bg-[#E8ECED] gap-4 flex-col hover:shadow-xl transition-all duration-150 ease-in">
+                <button class="rounded-xl border text-base font-medium border-black p-3">Button Hollow S</button>
+                <button class="rounded-xl text-base font-medium p-3 bg-white">Button Secondary M</button>
+                <button class="rounded-xl text-lg font-normal py-4 px-6 bg-black text-white">Button Primary XL</button>
+            </li>
+            <li class="w-full lg:w-[30%] md:w-[46%] flex items-center justify-center rounded-3xl self-stretch min-h-[300px] p-8 text-black bg-[#E8ECED] hover:shadow-xl transition-all duration-150 ease-in">
+                <div class="w-[90%] bg-white px-4 py-8">
+                    <p class="font-bold mb-2">Blog CMS</p>
+                    <span class="inline-block w-1/6 h-3 bg-[#E8ECED] mr-2"></span>
+                    <span class="inline-block w-1/6 h-3 bg-[#E8ECED] mr-2"></span>
+                    <span class="inline-block w-1/6 h-3 bg-[#E8ECED] mr-2"></span>
+                    <div class="mb-3"></div>
+                    <div class="inline-block w-[30%] h-10 bg-[#E8ECED] mr-2"></div>
+                    <div class="inline-block w-[30%] h-10 bg-[#E8ECED] mr-2"></div>
+                    <div class="inline-block w-[30%] h-10 bg-[#E8ECED]"></div>
+                </div>
+            </li>
+            <li class="w-full lg:w-[30%] md:w-[46%] rounded-3xl self-stretch min-h-[300px] p-8 bg-[#6DD1ED] text-black hover:shadow-xl transition-all duration-150 ease-in">
+                <h5 class="font-bold tracking-tight text-[40px] leading-tight">Pre-build<br> Pages</h5>
+                <p class="text-base font-normal mt-5">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <button class="flex justify-center items-center gap-3 mt-8 group">
+                    <span class="text-lg font-semibold group-hover:text-white transition-all duration-150 ease-in">Try out</span>
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8H15.4993" stroke="black" stroke-width="2" stroke-miterlimit="10" class="group-hover:stroke-white transition-all duration-150 ease-in"/>
+                        <path d="M8.3457 15.1535L15.4992 8L8.3457 0.846497" stroke="black" stroke-width="2" stroke-miterlimit="10" class="group-hover:stroke-white transition-all duration-150 ease-in"/>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+
+        <!-- gotta add here light / dark mode javascript -->
+        <div id="darkMode" class="bg-black text-white w-full pl-3 pr-3 lg:px-20 pt-20 md:pt-32 mb-36 md:mt-36 mt-20 transition-all duration-150 ease-in">
+            <p class="text-center">Turn on the light</p>
+            <h6 class="font-medium text-[32px] lg:text-[56px] text-center mt-4">Choose between dark and light theme</h6>
+            <p class="w-full md:w-[45%] text-center m-auto text-lg text-[#E7EBFB] font-normal mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="mx-auto flex items-center justify-center bg-white rounded-lg w-[100px] relative overflow-hidden mt-16 mb-16 shadow-lg">
+                <div id="nightShift" class="absolute top-0 right-0 h-full w-1/2 bg-[#6DD1ED] rounded-lg transition-all duration-150 ease-in"></div>
+                <button id="light" class="w-1/2 flex items-center justify-center h-[50px]">
+                    <svg class="z-10" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5547 17.4166C15.0985 17.4166 17.9713 14.5438 17.9713 11C17.9713 7.45615 15.0985 4.58331 11.5547 4.58331C8.01084 4.58331 5.138 7.45615 5.138 11C5.138 14.5438 8.01084 17.4166 11.5547 17.4166Z" fill="black"/>
+                        <path d="M11.5547 21.0467C11.0505 21.0467 10.638 20.6709 10.638 20.1667V20.0934C10.638 19.5892 11.0505 19.1767 11.5547 19.1767C12.0589 19.1767 12.4714 19.5892 12.4714 20.0934C12.4714 20.5975 12.0589 21.0467 11.5547 21.0467ZM18.0997 18.4617C17.8614 18.4617 17.6322 18.37 17.4489 18.1959L17.3297 18.0767C16.9722 17.7192 16.9722 17.1417 17.3297 16.7842C17.6872 16.4267 18.2647 16.4267 18.6222 16.7842L18.7414 16.9034C19.0989 17.2609 19.0989 17.8384 18.7414 18.1959C18.5672 18.37 18.338 18.4617 18.0997 18.4617ZM5.00971 18.4617C4.77137 18.4617 4.54221 18.37 4.35887 18.1959C4.00137 17.8384 4.00137 17.2609 4.35887 16.9034L4.47804 16.7842C4.83554 16.4267 5.41304 16.4267 5.77054 16.7842C6.12804 17.1417 6.12804 17.7192 5.77054 18.0767L5.65137 18.1959C5.47721 18.37 5.23887 18.4617 5.00971 18.4617ZM20.7214 11.9167H20.648C20.1439 11.9167 19.7314 11.5042 19.7314 11C19.7314 10.4959 20.1439 10.0834 20.648 10.0834C21.1522 10.0834 21.6014 10.4959 21.6014 11C21.6014 11.5042 21.2255 11.9167 20.7214 11.9167ZM2.46137 11.9167H2.38804C1.88387 11.9167 1.47137 11.5042 1.47137 11C1.47137 10.4959 1.88387 10.0834 2.38804 10.0834C2.89221 10.0834 3.34137 10.4959 3.34137 11C3.34137 11.5042 2.96554 11.9167 2.46137 11.9167ZM17.9805 5.49085C17.7422 5.49085 17.513 5.39919 17.3297 5.22502C16.9722 4.86752 16.9722 4.29002 17.3297 3.93252L17.4489 3.81335C17.8064 3.45585 18.3839 3.45585 18.7414 3.81335C19.0989 4.17085 19.0989 4.74835 18.7414 5.10585L18.6222 5.22502C18.448 5.39919 18.2189 5.49085 17.9805 5.49085ZM5.12887 5.49085C4.89054 5.49085 4.66137 5.39919 4.47804 5.22502L4.35887 5.09669C4.00137 4.73919 4.00137 4.16169 4.35887 3.80419C4.71637 3.44669 5.29387 3.44669 5.65137 3.80419L5.77054 3.92335C6.12804 4.28085 6.12804 4.85835 5.77054 5.21585C5.59637 5.39919 5.35804 5.49085 5.12887 5.49085ZM11.5547 2.78669C11.0505 2.78669 10.638 2.41085 10.638 1.90669V1.83335C10.638 1.32919 11.0505 0.916687 11.5547 0.916687C12.0589 0.916687 12.4714 1.32919 12.4714 1.83335C12.4714 2.33752 12.0589 2.78669 11.5547 2.78669Z" fill="black"/>
+                    </svg>
+                </button>
+                <button id="dark" class="w-1/2 flex items-center justify-center h-[50px]">
+                    <svg class="z-10" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9582 14.6026C19.8116 14.3551 19.3991 13.9701 18.3724 14.1534C17.8041 14.2543 17.2266 14.3001 16.6491 14.2726C14.5132 14.1809 12.5791 13.2001 11.2316 11.6876C10.0399 10.3584 9.30655 8.62592 9.29739 6.75592C9.29739 5.71092 9.49905 4.70259 9.91155 3.74925C10.3149 2.82342 10.0307 2.33759 9.82905 2.13592C9.61822 1.92509 9.12322 1.63175 8.15155 2.03509C4.40239 3.61175 2.08322 7.37009 2.35822 11.3943C2.63322 15.1801 5.29156 18.4159 8.81155 19.6351C9.65489 19.9284 10.5441 20.1026 11.4607 20.1393C11.6074 20.1484 11.7541 20.1576 11.9007 20.1576C14.9716 20.1576 17.8499 18.7093 19.6649 16.2434C20.2791 15.3909 20.1141 14.8501 19.9582 14.6026Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+            <img src="https://neluttu.github.io/saas-landing-page/images/site_05.png" class="w-[80%] mx-auto">
+        </div>
+        <script>
+            // Obține elementele HTML pe care dorești să le modifice
+            const darkModeContainer = document.querySelector('#darkMode');
+            const nightShift = document.querySelector('#nightShift');
+            const lightButton = document.querySelector('#light');
+            const darkButton = document.querySelector('#dark');
+
+            // Adaugă un ascultător de evenimente pentru butonul "dark"
+            darkButton.addEventListener('click', () => {
+            // Modifică clasele CSS pentru modul întunecat
+            darkModeContainer.classList.remove('bg-white', 'text-black');
+            darkModeContainer.classList.add('bg-black', 'text-white');
+            
+            // Modifică poziția elementului "nightShift"
+            nightShift.style.left = 'auto';
+            nightShift.style.right = '0';
+            });
+
+            // Adaugă un ascultător de evenimente pentru butonul "light"
+            lightButton.addEventListener('click', () => {
+            // Modifică clasele CSS pentru modul luminos
+            darkModeContainer.classList.remove('bg-black', 'text-white');
+            darkModeContainer.classList.add('bg-white', 'text-black');
+            
+            // Modifică poziția elementului "nightShift"
+            nightShift.style.left = '0';
+            nightShift.style.right = 'auto';
+            });
+
+        </script>
+
+        <div class="px-10 lg:px-40 mb-20 lg:mb-40">
+            <p class="text-center text-base my-3 font-[500]">Testimonials</p>
+            <h2 class="text-center font-outfit text-[32px] lg:text-[56px] font-bold">
+                Trusted by over 5,000+ solopreneurs and teams
+            </h2>
+            <p class="text-center text-lg text-[#364153] my-3 font-normal max-w-xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="flex items-start justify-start w-[92%] mx-auto gap-8 mb-32 lg:px-14 pb-16 relative overflow-hidden">
+            <div id="left" class="w-[40px] bg-black/10 hover:bg-black/30 transition-all duration-150 ease-in lg:left-[108px] left-[10px] top-1/3 aspect-square rounded-full absolute flex items-center justify-center cursor-pointer">
+                <svg class="ml-1" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_3131)">
+                    <path d="M8.51562 1.4436L1.44456 8.51467L8.51562 15.5857" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1_3131">
+                    <rect width="12" height="12" fill="white" transform="translate(8.51562 0.0292969) rotate(45)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div id="left" class="w-[40px] bg-black/10 hover:bg-black/30 transition-all duration-150 ease-in lg:right-[108px] right-[10px] top-1/3 aspect-square rounded-full absolute flex items-center justify-center cursor-pointer">
+                <svg class="mr-1" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_3127)">
+                    <path d="M8.48438 15.5564L15.5554 8.48533L8.48438 1.41426" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1_3127">
+                    <rect width="12" height="12" fill="white" transform="translate(8.48438 16.9707) rotate(-135)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="w-full lg:basis-[22%] md:basis-[47%] cursor-pointer bg-[#F5F7F7] hover:shadow-2xl transition-all duration-150 ease-linear rounded-2xl self-stretch p-8 shrink-0">
+                <div class="flex items-center justify-start gap-4 leading-tight">
+                    <img src="https://neluttu.github.io/saas-landing-page/images/avatar_01.png" class="w-[60px]">
+                    <span class="font-semibold text-[20px] tracking-tighter">
+                        <span class="block">Milla Willson</span>
+                        <small class="font-medium">Muula.com</small>
+                    </span>
+                </div>
+                <p class="mt-5 inline-block text-[#364153]">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+                </p>
+            </div>
+            <div class="w-full lg:basis-[22%] md:basis-[47%] cursor-pointer bg-[#F5F7F7] hover:shadow-2xl transition-all duration-150 ease-linear rounded-2xl self-stretch p-8 shrink-0">
+                <div class="flex items-center justify-start gap-4 leading-tight">
+                    <img src="https://neluttu.github.io/saas-landing-page/images/avatar_02.png" class="w-[60px]">
+                    <span class="font-semibold text-[20px] tracking-tighter">
+                        <span class="block">John Andrew</span>
+                        <small class="font-medium">Founder Nemo</small>
+                    </span>
+                </div>
+                <p class="mt-5 inline-block text-[#364153]">
+                    “Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.”
+                </p>
+            </div>
+            <div class="w-full lg:basis-[22%] md:basis-[47%] cursor-pointer bg-[#F5F7F7] hover:shadow-2xl transition-all duration-150 ease-linear rounded-2xl self-stretch p-8 shrink-0">
+                <div class="flex items-center justify-start gap-4 leading-tight">
+                    <img src="https://neluttu.github.io/saas-landing-page/images/avatar_03.png" class="w-[60px]">
+                    <span class="font-semibold text-[20px] tracking-tighter">
+                        <span class="block">Jessica Jay</span>
+                        <small class="font-medium">@jessij</small>
+                    </span>
+                </div>
+                <p class="mt-5 inline-block text-[#364153]">
+                    “Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.”
+                </p>
+            </div>
+            <div class="w-full lg:basis-[22%] md:basis-[47%] cursor-pointer bg-[#F5F7F7] hover:shadow-2xl transition-all duration-150 ease-linear rounded-2xl self-stretch p-8 shrink-0">
+                <div class="flex items-center justify-start gap-4 leading-tight">
+                    <img src="https://neluttu.github.io/saas-landing-page/images/avatar_04.png" class="w-[60px]">
+                    <span class="font-semibold text-[20px] tracking-tighter">
+                        <span class="block">Mark Donal</span>
+                        <small class="font-medium">@Kuto</small>
+                    </span>
+                </div>
+                <p class="mt-5 inline-block text-[#364153]">
+                    “Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+                </p>
+            </div>
+        </div>
+
+        <div class="w-[94%] relative px-4 max-w-[1200px] mx-auto bg-black flex items-center justify-center flex-col font-outfit text-white py-16 lg:py-32 rounded-3xl mb-32">
+            <svg class="absolute 2xl:block hidden -right-[120px] -bottom-[290px]" width="204" height="289" viewBox="0 0 204 289" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M164.441 86.8914C165.566 89.0236 162.417 91.3117 160.658 89.728C150.48 80.5138 131.843 67.508 126.586 55.2162C119.495 38.6694 123.367 17.9482 109.335 4.5595C108.829 4.1268 108.509 3.516 108.442 2.85379C108.374 2.19158 108.564 1.52875 108.972 1.0028C109.38 0.476845 109.975 0.128125 110.633 0.0289354C111.291 -0.0702546 111.963 0.0876976 112.507 0.47006C128.014 11.3767 125.073 32.7315 132.255 48.2193C139.535 63.9009 156.46 71.8055 164.441 86.8914Z" fill="#191919"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M60.7306 62.7421C46.2655 59.8731 32.7359 53.4673 21.3493 44.0963C17.6949 40.8768 22.0727 38.2813 24.7391 40.0825C36.0633 48.0835 49.0235 53.4687 62.6831 55.8492C76.0154 57.8216 89.5884 57.473 102.802 54.8186C106.059 54.3837 105.988 59.1491 103.747 60.4918C93.5546 66.614 72.1715 65.262 60.7306 62.7421Z" fill="#191919"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.618168 55.372C-1.40526 53.1548 1.99864 50.2094 4.22063 51.8168C19.393 63.4584 36.8136 71.829 55.3832 76.4006C69.8876 79.7099 65.8644 86.4988 52.8444 83.8135C32.8953 80.0124 14.6343 70.0678 0.618168 55.372Z" fill="#191919"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M56.9718 107.178C39.7396 106.18 15.8744 98.2379 2.93958 86.901C2.48471 86.4863 2.19299 85.9228 2.11703 85.312C2.04107 84.7011 2.18587 84.0833 2.52532 83.5699C2.86477 83.0564 3.37651 82.6811 3.96826 82.5118C4.56001 82.3424 5.19281 82.39 5.75253 82.6461C25.4148 92.2811 35.9007 97.1742 57.8748 99.902C70.63 101.491 70.2565 107.948 56.9718 107.178Z" fill="#191919"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M133.135 129.237C136.6 131.601 132.662 137.42 129.13 135.331C110.494 124.358 89.2715 131.076 69.0277 131.043C49.2889 131.377 29.9519 125.447 13.7946 114.104C11.4639 112.359 14.031 108.87 16.4941 110C34.9937 119.343 55.5418 123.894 76.2563 123.237C95.389 122.079 116.124 117.654 133.135 129.237Z" fill="#191919"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M280.731 179.478C251.562 161.692 202.115 117.938 181.843 90.2578C161.471 111.038 143.347 133.909 127.773 158.492C164.677 212.916 223.12 271.629 259.745 288.686C296.226 228.902 280.731 179.478 280.731 179.478Z" fill="black"/>
+                </svg>
+            <h4 class="text-[32px] lg:text-[56px] font-semibold mb-3 text-center">Ready to get started?</h4>
+            <p class="text-center text-[#E7EBFB] text-lg font-[100]">
+                Explore the Components, or upgrade to Pro to instantly unlock all items.
+            </p>
+            <div class="flex items-center justify-center flex-col md:flex-row gap-4 mt-10 text-base md:text-lg font-normal w-full">
+                <button class="bg-[#6DD1ED] hover:bg-[#6DD1ED] hover:text-white transition-all duration-150 ease-in text-black w-[96%] md:w-auto p-4 md:p-6 rounded-md md:rounded-xl flex items-center justify-center gap-2 group">
+                    <span>Buy Now</span>
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_3199)">
+                            <path d="M0.40387 8H15.9031" stroke="black" stroke-width="2" stroke-miterlimit="10" class="group-hover:stroke-white transition-all duration-150 ease-in"/>
+                            <path d="M8.74963 15.1534L15.9031 7.99994L8.74963 0.846436" stroke="black" stroke-width="2" stroke-miterlimit="10" class="group-hover:stroke-white transition-all duration-150 ease-in"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_3199">
+                                <rect width="17.1923" height="16" fill="black" transform="translate(0.40387)" class="group-hover:stroke-white transition-all duration-150 ease-in"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <button class="bg-[#E2F4F9] text-black w-[96%] md:w-auto p-4 md:p-6 rounded-md md:rounded-xl tracking-tight font-medium hover:bg-[#6DD1ED] hover:text-white transition-all duration-150 ease-in">
+                    Preview in Figma
+                </button>
+            </div>
+        </div>
+
+        <div class="w-full bg-[#F2F5F9] font-outfit py-20 lg:py-36">
+            <h4 class="text-[32px] lg:text-[56px] font-bold mb-3 text-center">Frequently asked questions</h4>
+            <p class="text-center text-[#364153] text-lg font-[400]">
+                Need help with something? Here are our most frequently asked questions.
+            </p>
+            <div class="w-[94%] lg:w-[70%] mx-auto mt-20 font-dmsans tracking-tight">
+                <details class="cursor-pointer bg-[right_1rem_top_1.6rem] bg-no-repeat bg-arrow text-lg font-medium border-b border-[#CDD5E0] pb-4 mb-6">
+                    <summary class="font-semibold list-none hover:text-[#6DD1ED] relative pr-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?
+                        <svg class="absolute right-0 bottom-2" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_3156)">
+                            <path d="M8 0L8 15.4993" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M0.847292 8.3457L8.00079 15.4992L15.1543 8.3457" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_3156">
+                            <rect width="17.1923" height="16" fill="white" transform="translate(16) rotate(90)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </summary>
+                    <p class="pt-4 font-[400] text-base text-[#364153]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </details>
+
+                <details open class="cursor-pointer bg-[right_1rem_top_1.6rem] bg-no-repeat bg-arrow text-lg font-medium border-b border-[#CDD5E0] pb-4 mb-6">
+                    <summary class="font-semibold list-none hover:text-[#6DD1ED] relative pr-6">
+                        Ut enim ad minima veniam, quis nostrum exercitationem?
+                        <svg class="absolute right-0 bottom-2" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_3156)">
+                            <path d="M8 0L8 15.4993" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M0.847292 8.3457L8.00079 15.4992L15.1543 8.3457" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_3156">
+                            <rect width="17.1923" height="16" fill="white" transform="translate(16) rotate(90)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </summary>
+                    <p class="pt-4 font-[400] text-base text-[#364153]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </details>
+
+                <details class="cursor-pointer bg-[right_1rem_top_1.6rem] bg-no-repeat bg-arrow text-lg font-medium border-b border-[#CDD5E0] pb-4 mb-6">
+                    <summary class="font-semibold list-none hover:text-[#6DD1ED] relative pr-6">
+                        Quis autem vel eum iure reprehenderit qui?
+                        <svg class="absolute right-0 bottom-2" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_3156)">
+                            <path d="M8 0L8 15.4993" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M0.847292 8.3457L8.00079 15.4992L15.1543 8.3457" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_3156">
+                            <rect width="17.1923" height="16" fill="white" transform="translate(16) rotate(90)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </summary>
+                    <p class="pt-4 font-[400] text-base text-[#364153]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </details>
+
+                <details class="cursor-pointer bg-[right_1rem_top_1.6rem] bg-no-repeat bg-arrow text-lg font-medium border-b border-[#CDD5E0] pb-4 mb-6">
+                    <summary class="font-semibold list-none hover:text-[#6DD1ED] relative pr-6">
+                        Voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat?
+                        <svg class="absolute right-0 bottom-2" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_3156)">
+                            <path d="M8 0L8 15.4993" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M0.847292 8.3457L8.00079 15.4992L15.1543 8.3457" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_3156">
+                            <rect width="17.1923" height="16" fill="white" transform="translate(16) rotate(90)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </summary>
+                    <p class="pt-4 font-[400] text-base text-[#364153]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </details>
+
+                <details class="cursor-pointer bg-[right_1rem_top_1.6rem] bg-no-repeat bg-arrow text-lg font-medium border-b border-[#CDD5E0] pb-4 mb-6">
+                    <summary class="font-semibold list-none hover:text-[#6DD1ED] relative pr-6">
+                        Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut?
+                        <svg class="absolute right-0 bottom-2" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_3156)">
+                            <path d="M8 0L8 15.4993" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M0.847292 8.3457L8.00079 15.4992L15.1543 8.3457" stroke="#9DA3AE" stroke-width="2" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_3156">
+                            <rect width="17.1923" height="16" fill="white" transform="translate(16) rotate(90)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </summary>
+                    <p class="pt-4 font-[400] text-base text-[#364153]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </details>
+            </div>
+        </div>
+        <footer class="bg-black text-white pb-16">
+            <ul class="flex items-baseline justify-between lg:flex-row flex-col gap-10 lg:mx-32 mx-4 lg:py-24 py-10 font-outfit border-b border-[#46494c] mb-6">
+                <li class="lg:w-1/5 w-full">
+                    <a href="about:srcdoc#" class="font-medium font-outfit text-[32px] hover:text-[#6DD1ED] transition-all duration-150 ease-in">launch</a>
+                </li>
+                <li class="lg:w-2/12 w-full leading-loose">
+                    <p>Product</p>
+                    <a href="#" class="font-[100] text-base leading-9 block hover:text-[#6DD1ED] transition-all duration-150 ease-in">What is Launch?</a>
+                    <a href="#" class="font-[100] text-base leading-9 block hover:text-[#6DD1ED] transition-all duration-150 ease-in">Pricing</a>
+                    <a href="#" class="font-[100] text-base leading-9 block hover:text-[#6DD1ED] transition-all duration-150 ease-in">FAQ</a>
+                    <a href="#" class="font-[100] text-base leading-9 block hover:text-[#6DD1ED] transition-all duration-150 ease-in">Contact</a>
+                </li>
+                <li class="lg:w-2/12 w-full leading-loose">
+                    <p>Resources</p>
+                    <a href="#" class="font-[100] text-base leading-9 block hover:text-[#6DD1ED] transition-all duration-150 ease-in">Updates</a>
+                    <a href="#" class="font-[100] text-base leading-9 block hover:text-[#6DD1ED] transition-all duration-150 ease-in">Community</a>
+                    <a href="#" class="font-[100] text-base leading-9 block hover:text-[#6DD1ED] transition-all duration-150 ease-in">Terms and Conditions</a>
+                    <a href="#" class="font-[100] text-base leading-9 block hover:text-[#6DD1ED] transition-all duration-150 ease-in">Privacy Policy</a>
+                </li>
+                <li class="lg:w-1/3 w-full">
+                    <p>Subscribe to our newsletter</p>
+                    <div class="flex items-center justify-center gap-2 mt-6 w-full">
+                        <input type="text" class="grow text-black outline-none rounded-lg p-3 px-5" placeholder="Email Address">
+                        <button class="bg-[#6DD1ED] hover:text-white transition-all duration-150 ease-in p-3 px-5 rounded-lg text-black font-semibold">Send</button>
+                    </div>
+                </li>
+            </ul>
+            <p class="lg:px-32 px-4 text-[#777B81] font-[200]">&copy; 2023 Launch</p>
+        </footer>
+    </div>
+</body>
+</html>

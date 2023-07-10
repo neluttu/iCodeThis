@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-tr from-[#c7cdf2] to-[#d8c7f6] text-[#fcfdff]">
+    <div class="bg-[#1a1832] w-full md:w-[678px] mr-2 ml-2 min-h-[200px] rounded-2xl flex items-center justify-center relative flex-col px-20 py-20">
+        <svg xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-6 top-6 cursor-pointer hover:stroke-red-400 transition-all duration-150 ease-in"
+            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8b88ab" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+        </svg>
+        <h1 class="text-xl">You left the meeting</h1>
+        <div class="mt-14 bg-[#282548] w-full flex items-center justify-center px-16 py-8 flex-col">
+            How was the quality of the call?
+            <div class="flex items-center justify-around mt-4 w-5/6 gap-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 cursor-pointer" width="42" height="42" viewBox="0 0 24 24" stroke-width="1" stroke="#f1da7d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" fill="#f1da7d" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 cursor-pointer" width="42" height="42" viewBox="0 0 24 24" stroke-width="1" stroke="#f1da7d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" fill="#f1da7d" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 cursor-pointer" width="42" height="42" viewBox="0 0 24 24" stroke-width="1" stroke="#f1da7d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" fill="#f1da7d" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 cursor-pointer hover:fill-[#f1da7d]" width="42" height="42" viewBox="0 0 24 24" stroke-width="1" stroke="#f1da7d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 cursor-pointer hover:fill-[#f1da7d]" width="42" height="42" viewBox="0 0 24 24" stroke-width="1" stroke="#f1da7d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                </svg>
+            </div>
+            <div class="flex items-center justify-start mt-4 w-5/6 gap-10 text-[#807ba4]">
+                <span class="w-1/2">Very bad</span>
+                <span class="w-1/2 text-right">Excellent</span>
+            </div>
+        </div>
+        <button class="w-2/3 mt-12 rounded-md py-5 mb-12" style="background: linear-gradient(-30deg, #682cb9 0%, #682cb9 50%, #6417ae 50%, #6417ae 100%);">Return Home</button>
+        <a href="#" class="text-[#76729a] hover:underline transition-all duration-150 ease-in">Join again</a>
+    </div>
+</body>
+</html>

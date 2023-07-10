@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        @apply w-full md:w-[31%] sm:w-[48%] border-[1px] border-[#16181f] bg-[#16181f] py-5 rounded-[5px] font-semibold transition-all duration-500 ease-in;
+    }
+
+    .button:hover { 
+        @apply hover:outline hover:outline-8 hover:outline-[#402631] hover:border-[#b02342] transition-all duration-150 ease-in;
+    }
+
+    .selected {
+        @apply outline outline-8 outline-[#402631] border-[#b02342];
+    }
+
+}

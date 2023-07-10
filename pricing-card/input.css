@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    header {
+        background-image: url(https://wallpapercave.com/wp/wp1814954.jpg);
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .checked {
+        position: relative;
+    }
+
+    .checked::before {
+        color: #c2c2c2;
+        position: absolute;
+        margin-left: -18px;
+        top: 4px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .seats svg {
+        cursor: pointer;
+    }
+
+    .seats svg:hover {
+        filter: drop-shadow(1px 1px 6px rgba(0, 52, 119, 0.5));
+    }
+}

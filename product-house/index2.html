@@ -1,0 +1,144 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 1em;
+  background-color: var(--color-bg);
+  font-family: "Poppins", sans-serif;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% + 1em);
+  height: 35%;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  margin: auto;
+  border-radius: 2em;
+  height: 60vh;
+  background-image: url("https://images.unsplash.com/photo-1510041883570-1c5b27d85cb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eSUyMG9uJTIwbW91bnRhaW4lMjBiZWFjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: bottom right;
+  position: relative;
+}
+.bottom-left {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-bg);
+  border-top-right-radius: 2em;
+}
+.radius__container {
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  position: relative;
+}
+.radius {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  bottom: 0;
+  left: 0;
+  border-radius: 2em;
+  background-color: transparent;
+  box-shadow: 0 0 0 2em var(--color-bg);
+  clip-path: polygon(0 50%, 50% 100%, 0 100%);
+}
+
+.radius__container.e {
+  bottom: -1em;
+  left: -3em;
+}
+
+.radius__container.e > .radius {
+  box-shadow: 0 0 0 2em black;
+}
+
+.price {
+  display: flex;
+  margin: 1em 1em 0 0;
+  background: black;
+  height: 100%;
+  border-radius: 2em 2em 0 0;
+}
+
+h1 {
+  margin: auto;
+  background: white;
+  padding: 10% 20%;
+  border-radius: .5em;
+}
+
+.info {
+  background-color: black;
+  color: white;
+  margin-top: 1em;
+  height: 33vh;
+  border-radius: 0 2em 2em;
+  line-height:60px;
+}
+h2 {
+  font-size: 2.5em;
+  font-weight: 300;  
+  padding-left: 1em;
+}
+</style>
+<div class="container">
+  <div class="column">
+    <div class="radius__container">
+      <div class="radius"></div>
+    </div>
+    <div class="bottom-left">
+      <div class="price">
+        <h1>$114,000</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="radius__container">
+    <div class="radius"></div>
+  </div>
+  <div class="radius__container e">
+    <div class="radius"></div>
+  </div>
+</div>
+
+<div class="info">
+  <h2><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" stroke-width="0" fill="currentColor"></path>
+</svg>New York</h2>
+  <h2><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M5 4h14a1 1 0 0 1 1 1v5a1 1 0 0 1 -1 1h-7a1 1 0 0 0 -1 1v7a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1"></path>
+   <path d="M4 8l2 0"></path>
+   <path d="M4 12l3 0"></path>
+   <path d="M4 16l2 0"></path>
+   <path d="M8 4l0 2"></path>
+   <path d="M12 4l0 3"></path>
+   <path d="M16 4l0 2"></path>
+</svg>58 m2</h2>
+  <h2><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+   <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+   <path d="M10 12h4v4h-4z"></path>
+</svg>2-room apartment</h2>
+</div>
+

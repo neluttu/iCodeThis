@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components { 
+    .checked {
+        @apply w-[34px] cursor-pointer rounded-md h-[34px] bg-[#716af3] border-2 border-[#716af3] flex justify-center items-center shadow-[0px_0px_15px_-5px_rgba(0,0,0,0.00),0px_0px_0px_4px_#323062];
+    }
+
+    .unchecked { 
+        @apply w-[34px] cursor-pointer rounded-md h-[34px] group-hover:bg-[#716af3] group-hover:border-[#716af3] bg-transparent border-2 border-[#48475a];
+    }
+
+    .checkboxLabel {
+        @apply flex justify-start items-center gap-2 text-base mt-2 mb-4 cursor-pointer;
+    }
+
+    .radioLabel {
+        @apply flex justify-start items-center gap-2 text-base mt-2 mb-4 cursor-pointer;
+    }
+}

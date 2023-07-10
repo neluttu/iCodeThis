@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        @apply w-full text-[#7b7d81] text-left bg-[#fcfbff] border border-[#e0ddec] p-6 rounded-md text-xl font-[500] transition-all duration-150 ease-in hover:bg-[#e7e9f8] mb-5;
+    }
+
+    .buttonSelected {
+        @apply w-full text-[#e6eaff] text-left bg-[#666eff] border border-[#666eff] p-6 rounded-md text-xl font-[500] transition-all duration-150 ease-in shadow-[0px_7px_11px_1px_#C2C8FF] mb-5;
+    }
+}

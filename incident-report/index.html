@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Report - iCodeThis.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="styles.css" rel="stylesheet" media="all" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h3>Incident History</h3> <span class="new">New</span>
+            <div class="box">
+                <span class="date">Mar 8, 2020</span>
+                <br>
+                <span class="title">Users are unable to rearrange screens <span class="resolved">Resolved</span></span>
+                <br>
+                <span class="incident">Our engineers have resolved the issue where users were unable to rearrange screens in V6 prototypes. Please reach out to our support team.<span class="more"><br><br>Be advised, this is not a drill. This si actually a live test. Do not take the red pill! Your screens will not rearrange if you take the red pill!</span></span> 
+                <br>
+                <button data-text="Show less">Full report</button>
+            </div>
+            <div class="spacer"></div>
+
+            <div class="box">
+                <span class="date">Mar 6, 2020</span>
+                <br>
+                <span class="title">Cloud V7 users may be experiencing some slowness or issues loading projects <span class="monitoring">Monitoring</span></span> 
+                <br>
+                <span class="incident">Our engineers have resolved the issue where users were unable to rearrange screens in V6 prototypes. Please reach out to our support team.<span class="more"><br><br>Be advised, this is not a drill. This si actually a live test. Do not take the red pill! Your screens will not rearrange if you take the red pill!</span></span>
+                <br>
+                <button data-text="Show less">Full report</button>
+            </div>
+            <div class="spacer"></div>
+
+            <div class="box">
+                <span class="date">Feb 28, 2020</span>
+                <br>
+                <span class="title">Some screens are not loading or loading intermittently for some V7 users <span class="investigating">Investigating</span></span>
+                <br>
+                <span class="incident">Our engineers have resolved the issue where users were unable to rearrange screens in V6 prototypes. Please reach out to our support team.<span class="more"><br><br>Be advised, this is not a drill. This si actually a live test. Do not take the red pill! Your screens will not rearrange if you take the red pill!</span></span>
+                <br>
+                <button data-text="Show less">Full report</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('button').click(function () {
+            var oldText = $(this).text();
+            var newText = $(this).data('text');
+            $(this).text(newText).data('text',oldText);
+            $(this).parent().find('.more').toggle();
+        });
+    </script>
+</body>
+</html>

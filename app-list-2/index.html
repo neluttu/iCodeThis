@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeThis.com daily challenge</title>
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#282a2c] flex items-start justify-start min-h-screen flex-col">
+    <div class="bg-[#181a1c] w-full flex md:h-[194px] items-end justify-start text-[#8f9192] px-4">
+        <nav class="w-full max-w-[1340px] mx-auto flex items-center justify-center gap-10">
+            <div class="hidden gap-10 pt-4 md:flex">
+                <a href="#" class="pb-4 text-lg font-[500] hover:text-[#31e0d2] transition-all ease-in duration-150">HOME</a>
+                <a href="#" class="pb-4 text-lg font-[500] hover:text-[#31e0d2] transition-all ease-in duration-150 text-[#31e0d2] border-b-4 border-[#31e0d2]">APPS</a>
+                <a href="#" class="pb-4 text-lg font-[500] hover:text-[#31e0d2] transition-all ease-in duration-150">ACCOUNT</a>
+                <a href="#" class="pb-4 text-lg font-[500] hover:text-[#31e0d2] transition-all ease-in duration-150 flex gap-2 group">
+                    <span>CATEGORIES</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#8f9192" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M6 9l6 6l6 -6" class="group-hover:stroke-[#31e0d2] transition-all duration-150 ease-in" />
+                      </svg>
+                </a>
+            </div>
+            <div class="py-4 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer group" width="28" height="28" viewBox="0 0 24 24" stroke-width="3" stroke="#8f9192" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 6l16 0" class="group-hover:stroke-[#41d8c7]" />
+                    <path d="M4 12l16 0" class="group-hover:stroke-[#41d8c7]"/>
+                    <path d="M4 18l16 0" class="group-hover:stroke-[#41d8c7]"/>
+                </svg>
+            </div>
+            <div class="flex items-center justify-end w-full gap-2 text-right grow group">
+                <input type="text" name="search" placeholder="Search..." class="bg-transparent border-[3px] border-[#41d8c7] rounded-md p-1 text-[#41d8c7] outline-none px-2 w-0 opacity-0 transition-all duration-150 ease-in group-hover:w-auto group-hover:opacity-100">
+                <svg class="inline-block cursor-pointer group" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" stroke-width="3" stroke="#8f9192" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" class="group-hover:stroke-[#41d8c7]" />
+                    <path d="M21 21l-6 -6" class="group-hover:stroke-[#41d8c7]" />
+                </svg>
+            </div>
+        </nav>
+    </div>
+    <section class="slide-in-elliptic-top-fwd w-full max-w-[1340px] mx-auto flex items-start justify-start mt-10 text-white font-light flex-col px-4 mb-10">
+        <h1 class="md:text-4xl text-2xl font-[400] mb-2">Recommended for you</h1>
+        <h2 class="md:text-xl text-lg font-[400]">Based on your installs</h2>
+        <ul class="flex flex-wrap items-start justify-between w-full gap-8 mx-auto mt-10">
+            <li class="p-5 rounded-md flex items-start justify-start gap-4 self-stretch w-full md:basis-[47%] lg:basis-[31%] shadow-[0px_0px_12px_5px_rgba(0,0,0,0.22)] hover:bg-[#181a1c] transition-all duration-150 ease-in group">
+                <img src="https://play-lh.googleusercontent.com/dCM0CyWMQ9wWUVYw-Xx0s4FlYtzS-PiAmo-mbEkpxTDYF-x8NitA8g89ebGiHMp0cPI=w240-h480-rw" class="max-w-[138px] rounded-lg">
+                <div class="pt-3">
+                    <h3 class="text-sm font-semibold">30 Day Fit Challenge Workout</h3>
+                    <h4 class="text-sm">NorthPark.Android</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#181a1c" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#181a1c" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#181a1c" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#181a1c" />
+                        </svg>
+                    </div>
+                    <button class="mt-3 text-sm bg-[#181a1c] hover:!bg-[#41d8c7] group-hover:bg-[#282a2c] transition-all duration-150 ease-in px-6 py-2 rounded-md border-b-[3px] border-b-[#41d8c7]">
+                        INSTALL APP
+                    </button>
+                </div>
+            </li>
+            <li class="p-5 rounded-md flex items-start justify-start gap-4 self-stretch w-full md:basis-[47%] lg:basis-[31%] shadow-[0px_0px_12px_5px_rgba(0,0,0,0.22)] hover:bg-[#181a1c] transition-all duration-150 ease-in group">
+                <img src="https://lh3.googleusercontent.com/KuiyqVCbEoaqKfHCPUwivMXwJZQcB5bK3gUHV6u1luLe7oXEB_ko9itrWFG2W8iEAAWr" class="max-w-[138px] rounded-lg">
+                <div class="pt-3">
+                    <h3 class="text-sm font-semibold">S Health</h3>
+                    <h4 class="text-sm">S HealthSamsung Electronics Co.</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#181a1c" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#181a1c" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#181a1c" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#181a1c" />
+                        </svg>
+                    </div>
+                    <button class="mt-3 text-sm bg-[#181a1c] hover:!bg-[#41d8c7] group-hover:bg-[#282a2c] transition-all duration-150 ease-in px-6 py-2 rounded-md border-b-[3px] border-b-[#41d8c7]">
+                        INSTALL APP
+                    </button>
+                </div>
+            </li>
+            <li class="p-5 rounded-md flex items-start justify-start gap-4 self-stretch w-full md:basis-[47%] lg:basis-[31%] shadow-[0px_0px_12px_5px_rgba(0,0,0,0.22)] hover:bg-[#181a1c] transition-all duration-150 ease-in group">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpjZHCijScv6zau5nhLs9T4YzSTwp2nXwCXc7Hmf_491I92Muf_Bzb-83O3gAmKycbsQ&usqp=CAU" class="max-w-[138px] rounded-lg">
+                <div class="pt-3">
+                    <h3 class="text-sm font-semibold">Crab War</h3>
+                    <h4 class="text-sm">Appxplore Sdn Bhd</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                    </div>
+                    <button style="display: flex; justify-content: center; align-items: center;" class="mt-3 text-sm bg-[#181a1c] hover:!bg-[#41d8c7] group-hover:bg-[#282a2c] transition-all duration-150 ease-in px-6 py-2 rounded-md border-b-[3px] border-b-[#41d8c7]">
+                        INSTALL APP
+                    </button>
+                </div>
+            </li>
+            <li class="p-5 rounded-md flex items-start justify-start gap-4 self-stretch w-full md:basis-[47%] lg:basis-[31%] shadow-[0px_0px_12px_5px_rgba(0,0,0,0.22)] hover:bg-[#181a1c] transition-all duration-150 ease-in group">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1tanvFoxvrEzWS_BMqlsFirV_WJYusOA56wegGwYaZQXMotuIQmge3OfsHWd6BaLbmk&usqp=CAU" class="max-w-[138px] rounded-lg">
+                <div class="pt-3">
+                    <h3 class="text-sm font-semibold">Sandstorm: Pirate Wars</h3>
+                    <h4 class="text-sm">Ubisoft Entertainment</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#181a1c" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#181a1c" />
+                        </svg>
+                    </div>
+                    <button class="mt-3 text-sm bg-[#181a1c] hover:!bg-[#41d8c7] group-hover:bg-[#282a2c] transition-all duration-150 ease-in px-6 py-2 rounded-md border-b-[3px] border-b-[#41d8c7]">
+                        INSTALL APP
+                    </button>
+                </div>
+            </li>
+            <li class="p-5 rounded-md flex items-start justify-start gap-4 self-stretch w-full md:basis-[47%] lg:basis-[31%] shadow-[0px_0px_12px_5px_rgba(0,0,0,0.22)] hover:bg-[#181a1c] transition-all duration-150 ease-in group">
+                <img src="https://cdn.jim-nielsen.com/ios/512/netflix-2018-11-01.png" class="max-w-[138px] rounded-lg">
+                <div class="pt-3">
+                    <h3 class="text-sm font-semibold">Netflix</h3>
+                    <h4 class="text-sm">Netflix, Inc.</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                    </div>
+                    <button class="mt-3 text-sm bg-[#181a1c] hover:!bg-[#41d8c7] group-hover:bg-[#282a2c] transition-all duration-150 ease-in px-6 py-2 rounded-md border-b-[3px] border-b-[#41d8c7]">
+                        INSTALL APP
+                    </button>
+                </div>
+            </li>
+            <li class="p-5 rounded-md flex items-start justify-start gap-4 self-stretch w-full md:basis-[47%] lg:basis-[31%] shadow-[0px_0px_12px_5px_rgba(0,0,0,0.22)] hover:bg-[#181a1c] transition-all duration-150 ease-in group">
+                <img src="https://image.winudf.com/v2/image/Y29tLmhvbGEuc2NlbmUzZC5zaHVpbXVfaWNvbl9wbTFjZXh1dQ/icon.png?w=&fakeurl=1" class="max-w-[138px] rounded-lg">
+                <div class="pt-3">
+                    <h3 class="text-sm font-semibold">Jellyfish Hola 3D Theme</h3>
+                    <h4 class="text-sm">Holaverse</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#181a1c" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#181a1c" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#181a1c" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#181a1c" />
+                        </svg>
+                    </div>
+                    <button class="mt-3 text-sm bg-[#181a1c] hover:!bg-[#41d8c7] group-hover:bg-[#282a2c] transition-all duration-150 ease-in px-6 py-2 rounded-md border-b-[3px] border-b-[#41d8c7]">
+                        INSTALL APP
+                    </button>
+                </div>
+            </li>
+            <li class="p-5 rounded-md flex items-start justify-start gap-4 self-stretch w-full md:basis-[47%] lg:basis-[31%] shadow-[0px_0px_12px_5px_rgba(0,0,0,0.22)] hover:bg-[#181a1c] transition-all duration-150 ease-in group">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c0/91/1c/c0911c5e-81fd-854f-793b-46dbd007f835/AppIcon-1x_U007emarketing-0-7-0-85-220.png/230x0w.webp" class="max-w-[138px] rounded-lg">
+                <div class="pt-3">
+                    <h3 class="text-sm font-semibold">Qatar Airways</h3>
+                    <h4 class="text-sm">Qatar Airways</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#181a1c" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#181a1c" />
+                        </svg>
+                    </div>
+                    <button class="mt-3 text-sm bg-[#181a1c] hover:!bg-[#41d8c7] group-hover:bg-[#282a2c] transition-all duration-150 ease-in px-6 py-2 rounded-md border-b-[3px] border-b-[#41d8c7]">
+                        INSTALL APP
+                    </button>
+                </div>
+            </li>
+            <li class="p-5 rounded-md flex items-start justify-start gap-4 self-stretch w-full md:basis-[47%] lg:basis-[31%] shadow-[0px_0px_12px_5px_rgba(0,0,0,0.22)] hover:bg-[#181a1c] transition-all duration-150 ease-in group">
+                <img src="https://cdn.jim-nielsen.com/ios/512/microsoft-word-for-ipad-2014-05-02.png" class="max-w-[138px] rounded-lg">
+                <div class="pt-3">
+                    <h3 class="text-sm font-semibold">Microsoft Word</h3>
+                    <h4 class="text-sm">Microsoft Corp.</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                    </div>
+                    <button class="mt-3 text-sm bg-[#181a1c] hover:!bg-[#41d8c7] group-hover:bg-[#282a2c] transition-all duration-150 ease-in px-6 py-2 rounded-md border-b-[3px] border-b-[#41d8c7]">
+                        INSTALL APP
+                    </button>
+                </div>
+            </li>
+            <li class="p-5 rounded-md flex items-start justify-start gap-4 self-stretch w-full md:basis-[47%] lg:basis-[31%] shadow-[0px_0px_12px_5px_rgba(0,0,0,0.22)] hover:bg-[#181a1c] transition-all duration-150 ease-in group">
+                <img src="https://cdn.jim-nielsen.com/ios/512/fruit-ninja-2020-08-31.png" class="max-w-[138px] rounded-lg">
+                <div class="pt-3">
+                    <h3 class="text-sm font-semibold">Fruit Ninja Free</h3>
+                    <h4 class="text-sm">Halfbrick Studios</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" width="16" height="20"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#f8bc00" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                            fill="#f8bc00" />
+                        </svg>
+                    </div>
+                    <button class="mt-3 text-sm bg-[#181a1c] hover:!bg-[#41d8c7] group-hover:bg-[#282a2c] transition-all duration-150 ease-in px-6 py-2 rounded-md border-b-[3px] border-b-[#41d8c7]">
+                        INSTALL APP
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script>
+
+function iCodeThis() {
+  const iLove = 'Practice daily for nurturing knowledge ';
+  const coding = ['developing', 'real', 'programming', 'experience!'];
+  const days = 365;
+
+  return c(iLove + coding.slice(0, -1).join(' ')) + (days % 10) * 4;
+}
+
+function c(x) {
+  return x
+    .split(' ')
+    .map((w) => w[0].toLowerCase())
+    .join('');
+}
+
+function c(x) {
+  return x.split(' ').map((w) => w[0].toLowerCase()).join('');
+}
+
+iCodeThis();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+
+<body class="bg-[#efebe8] flex justify-center items-center min-h-screen">
+    <div class="bg-white text-[#181028] shadow-lg w-full sm:max-w-md pb-9 relative ml-2 mr-2">
+        <div class="p-6 bg-[#a9c4e2] text-white text-center text-2xl font-bold relative mb-9 shadow-lg max-w-full">
+            <svg class="absolute cursor-pointer" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="56" height="56"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="5" y1="12" x2="9" y2="16" />
+                <line x1="5" y1="12" x2="9" y2="8" />
+            </svg>
+            Thu, July 6, 2023
+            <br>
+            <span class="font-normal text-base">6 tasks - 3 completed</span>
+        </div>
+        <ul class="tasks p-0">
+            <li class="flex flex-row justify-between pl-11 pr-11 pt-5 pb-5 text-slate-600 font-normal text-xl max-w-full tasks">
+                <label for="one" class="cursor-pointer">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline class="hidden" points="9 11 12 14 20 6" />
+                    <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                  </svg> 
+                  Test use cases for the new tool</label>
+                <input type="checkbox" id="one" class="hidden">
+            </li>
+            <li class="flex flex-row justify-between pl-11 pr-11 pt-5 pb-5 text-slate-600 font-normal text-xl max-w-full tasks">
+                <label for="two" class="cursor-pointer">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline class="hidden" points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg> 
+                    Send out emails
+                </label>
+                <input type="checkbox" id="two" class="hidden">
+            </li>
+            <li class="flex flex-row justify-between pl-11 pr-11 pt-5 pb-5 text-slate-600 font-normal text-xl max-w-full tasks">
+                <label for="three" class="cursor-pointer">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline class="hidden" points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg> 
+                    Daily UI practice
+                </label>
+                <input type="checkbox" id="three" class="hidden">
+            </li>
+            <li class="flex flex-row justify-between pl-11 pr-11 pt-5 pb-5 text-slate-600 font-normal text-xl max-w-full tasks">
+                <label for="four" class="cursor-pointer">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline class="hidden" points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg> 
+                    Driving practice
+                </label>
+                <input type="checkbox" id="four" class="hidden">
+            </li>
+            <li class="flex flex-row justify-between pl-11 pr-11 pt-5 pb-5 text-slate-600 font-normal text-xl max-w-full tasks">
+                <label for="five" class="cursor-pointer line-through text-slate-400">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg> 
+                    Water flowers
+                </label>
+                <input type="checkbox" id="five" class="hidden" checked>
+            </li> 
+            <li class="flex flex-row justify-between pl-11 pr-11 pt-5 pb-5 text-slate-600 font-normal text-xl max-w-full tasks">
+                <label for="six" class="cursor-pointer line-through text-slate-400">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg> 
+                    Upload PSD files to Dropbox
+                </label>
+                <input type="checkbox" id="six" class="hidden" checked>
+            </li>
+        </ul>
+        <br><br>
+        <div class="relative min-h-min">
+            <button class="text-6xl text-white bg-[#9ac2f0] rounded-full pt-0 pl-4 pr-4 pb-4 absolute right-6 top-0 z-10 transition duration-300 hover:bg-[#164780] ease">+</button>
+            <input type="text" class="border border-slate-300 p-3 rounded-md ml-8 relative outline-none mt-4 w-5/6">
+        </div>
+        <script>
+            const taskList = document.querySelector('.tasks');
+            taskList.addEventListener('change', (event) => {
+                const checkbox = event.target;
+                if (checkbox.checked) {
+                    checkbox.parentNode.querySelector('label').classList.add('line-through', 'text-slate-400');
+                    
+                    checkbox.parentNode.querySelector('polyline').classList.remove('hidden');
+
+                    const uncheckedItems = document.querySelectorAll('.tasks input:not(:checked)');
+                    if (uncheckedItems.length > 0) {
+                        uncheckedItems[uncheckedItems.length - 1].parentNode.after(checkbox.parentNode);
+                    } else {
+                        taskList.insertBefore(checkbox.parentNode, taskList.firstChild);
+                    }
+                } else {
+                    checkbox.parentNode.querySelector('label').classList.remove('line-through', 'text-slate-400');
+                    checkbox.parentNode.querySelector('polyline').classList.add('hidden');
+                    
+
+                    taskList.insertBefore(checkbox.parentNode, taskList.firstChild);
+                }
+            });
+
+            const inputField = document.querySelector('input[type="text"]');
+            const addButton = document.querySelector('button');
+
+            addButton.addEventListener('click', () => {
+                const label = inputField.value.trim();
+                if (label !== '') {
+                const newTask = document.createElement('li');
+                newTask.classList.add('flex', 'flex-row', 'justify-between', 'pl-11', 'pr-11', 'pt-5', 'pb-5', 'text-slate-600', 'font-normal', 'text-xl', 'max-w-full', 'tasks');
+                newTask.innerHTML = `
+                     <label for="${label}" class="cursor-pointer">
+                        <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline class="hidden" points="9 11 12 14 20 6" />
+                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                      </svg> 
+                        ${label}
+                    </label>
+                    <input type="checkbox" id="${label}" class="hidden">
+                `;
+                const firstTask = document.querySelector('.tasks > li:first-child');
+                firstTask.before(newTask);
+                inputField.value = '';
+                }
+            });
+
+            inputField.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    const label = inputField.value.trim();
+                    if (label !== '') {
+                        const id = `task-${Math.floor(Math.random() * Date.now())}`;
+                        const newTask = document.createElement('li');
+                        newTask.classList.add('flex', 'flex-row', 'justify-between', 'pl-11', 'pr-11', 'pt-5', 'pb-5', 'text-slate-600', 'font-normal', 'text-xl', 'max-w-full', 'tasks');
+                        newTask.innerHTML = `
+                            <label for="${label}" class="cursor-pointer">
+                                <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline class="hidden" points="9 11 12 14 20 6" />
+                                <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                            </svg> 
+                                ${label}
+                            </label>
+                            <input type="checkbox" id="${label}" class="hidden">
+                            `;
+                        const firstTask = document.querySelector('.tasks > li:first-child');
+                        firstTask.before(newTask);
+                        inputField.value = '';
+                    }
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

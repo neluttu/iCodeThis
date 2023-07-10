@@ -1,0 +1,28 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# Set the base directory
+RewriteBase /rewrite/
+
+# permite accesul la fisierele din directorul /template
+RewriteCond %{REQUEST_URI} ^/template/
+RewriteRule ^(.*)$ - [L]
+
+# Exclude requests to the /template/images directory
+RewriteCond %{REQUEST_URI} !^/rewrite/template/images/
+
+# Exclude the /template directory from rewriting
+RewriteRule ^(template/.*)$ - [L]
+
+# Rewrite index.php requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ index.php?page=$1 [L]
+
+# Rewrite pages with query parameters
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/(.+)$ index.php?page=$1&param=$2 [L]
+
+# Rewrite the home page
+RewriteRule ^$ index.php [L]

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password field</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body class="bg-white flex justify-center items-center min-h-screen relative text-[#132b50]">
+    <div class="min-h-screen bg-[#f5f6f7] w-full md:w-[920px] sm:ml-4 sm:mr-4 flex justify-center items-center">
+        <div class="bg-white w-[98%] sm:w-[65%] flex justify-start items-start shadow-[0px_0px_15px_7px_rgba(0,0,0,0.02)] rounded-xl min-h-[200px] p-4 sm:p-20 flex-col m-2">
+            <h1 class="text-3xl font-bold mb-8">Enter your password</h1>
+            <div class="flex items-center justify-start gap-5 mb-6">
+                <img src="https://pbs.twimg.com/profile_images/1602443868527595520/cOjnC2Zh_400x400.jpg" class="w-[80px] rounded-full">
+                <span class="grow font-semibold">
+                    Business Account<br>
+                    <span class="text-lg font-bold">Ionel Olariu</span>
+                </span>
+            </div>
+            <span class="font-semibold">Password</span>
+            <div class="flex items-center justify-start gap-5 mb-10 mt-1 w-full">
+                <input type="password" value="Ain't ya too curious?" id="password" placeholder="Enter your password" class="outline-none grow rounded-md border p-4 border-[#132b50] password pl-10">
+                <svg id="view" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer transition-all duration-150 ease-in hover:stroke-[#ba0000]  shrink-0 box-content" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#132b50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10.585 10.587a2 2 0 0 0 2.829 2.828" />
+                    <path d="M16.681 16.673a8.717 8.717 0 0 1 -4.681 1.327c-3.6 0 -6.6 -2 -9 -6c1.272 -2.12 2.712 -3.678 4.32 -4.674m2.86 -1.146a9.055 9.055 0 0 1 1.82 -.18c3.6 0 6.6 2 9 6c-.666 1.11 -1.379 2.067 -2.138 2.87" />
+                    <path d="M3 3l18 18" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="hidden transition-all duration-150 ease-in hover:stroke-[#01c505] cursor-pointer" id="hide" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#132b50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                </svg>
+                <script>
+                    document.getElementById("view").addEventListener("click", function() {
+                        var passwordField = document.getElementById("password");
+                        var view = document.getElementById("view");
+                        var hide = document.getElementById("hide");
+                        var passwordValue = passwordField.value;
+
+                        if(passwordField.type == 'password') {
+                            passwordField.type = "text";
+                            view.style.display = "none";
+                            hide.style.display = "inline-block";
+                        }
+                        else passwordField.type = "password";
+                        passwordField.value = passwordValue;
+                    });
+
+                    document.getElementById("hide").addEventListener("click", function() {
+                        var passwordField = document.getElementById("password");
+                        var view = document.getElementById("view");
+                        var hide = document.getElementById("hide");
+                        var passwordValue = passwordField.value;
+
+                        if(passwordField.type == 'text') {
+                            passwordField.type = "password";
+                            view.style.display = "inline-block";
+                            hide.style.display = "none";
+                        }
+                        else passwordField.type = "password";
+
+                        passwordField.value = passwordValue;
+                    });
+                </script>
+            </div>
+            <div class="flex items-stretch justify-start w-full mb-12">
+                <label for="checkMe" class="flex items-center cursor-pointer grow">
+                  <div class="relative">
+                    <input type="checkbox" id="checkMe" class="sr-only">
+                    <div class="block bg-white border border-[#132b50] w-[62px] h-9 rounded-full"></div>
+                    <div class="dot absolute left-2 top-[6px] bg-[#132b50] w-6 h-6 rounded-full transition"></div>
+                  </div>
+                  <div class="ml-3 text-[#132b50] font-medium">Stay signed in</div>
+                </label>
+                <button class="bg-[#132b50] px-4 py-5 rounded-md text-white font-semibold transition-all duration-150 hover:bg-[#2f7ef7]">Continue</button>
+              </div>
+            <br>
+            <p>
+                <a href="#" class="underline font-semibold text-lg transition-all ease-in duration-150 hover:text-[#2f7ef7]">Reset password</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

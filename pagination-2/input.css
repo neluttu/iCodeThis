@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    .round {
+        border-radius: 100%;
+        border-image: linear-gradient(to bottom left, #4b3858, #1b3146) 1;
+        border-style: solid;
+    }
+
+}
